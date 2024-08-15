@@ -33,13 +33,13 @@ export const NavContainer = styled.nav`
   a {
     color: ${props => props.theme.textColorLaranja};
     font-weight: bold;
-    text-decoration: none; /* Remove o sublinhado dos links */
+    text-decoration: none; 
     cursor: pointer;
     margin: 0;
   }
 
   a:hover {
-    /* Estilo opcional para o estado hover dos links */
+   
     color: ${props => props.theme.textColorLaranjaHover};
   }
 

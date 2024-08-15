@@ -7,7 +7,7 @@ import { GlobalStyle } from "./styles/global.js";
 import Guia from "./pages/Guia.jsx"; // Importa o componente Guia
 import Quem from "./pages/Quem.jsx";
 import Referencias from "./pages/Referencias.jsx";
-import { SaibaContainer } from "./pages/Home.sytes.js";
+import DeepSleep from "./pages/DeepSleep.jsx";
 
 
 const router = createBrowserRouter([
@@ -32,8 +32,8 @@ const router = createBrowserRouter([
 
   {
     path: "/DeepSleep",
-    element: <SaibaContainer/>
-  }
+    element: <DeepSleep/>,
+  },
 ]);
 
 export default function App() {

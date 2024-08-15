@@ -16,19 +16,16 @@ export function Home() {
               <Link to="/">Início</Link>
             </li>
           </ul>
-
           <ul>
             <li>
               <Link to="/Guia">Funcionamento</Link>
             </li>
           </ul>
-
           <ul>
             <li>
               <Link to="/Referencias">Referências</Link>
             </li>
           </ul>
-
           <ul>
             <li>
               <Link to="/Quem">Integrantes</Link>
@@ -36,6 +33,7 @@ export function Home() {
           </ul>
         </NavContainer>
       </HeaderContainer>
+
       <MainContainer>
         <Title>Deep Sleep</Title>
         <Subtitle>Um travesseiro inteligente que ajuda pessoas a dormir melhor com sensores de vibração. Conheça nosso produto inovador!</Subtitle>
