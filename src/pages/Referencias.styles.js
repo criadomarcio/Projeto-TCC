@@ -39,10 +39,8 @@ export const NavContainer = styled.nav`
   }
 
   a:hover {
-   
     color: ${props => props.theme.textColorLaranjaHover};
   }
-
 `;
 
 export const MainContainer = styled.main`

@@ -1,4 +1,3 @@
-// src/pages/Guia.styles.js
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
@@ -18,106 +17,161 @@ export const LogoContainer = styled.div`
 
 export const NavContainer = styled.nav`
   display: flex;
-  gap: 20px;
+  gap: 50px;
+
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+
   li {
     margin: 0;
   }
+
   a {
     color: ${props => props.theme.textColorLaranja};
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none; 
     cursor: pointer;
+    margin: 0;
   }
+
   a:hover {
     color: ${props => props.theme.textColorLaranjaHover};
   }
 `;
 
-export const GuideContainer = styled.div`
-  // Your styles here
-`;
-
 export const Titulo = styled.h1`
-  margin: 2rem;
-  font-size: 36px;
+  margin: 2rem 0;
+  font-size: 60px;
   text-align: center;
   color: #5D3FD3;
+  font-weight: bold;
 `;
 
-export const AtivacaoContainer = styled.h2`
-  margin: 1rem auto;
+export const MainContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+`;
+
+export const Column = styled.div`
+  flex: 1;
+  margin: 0 1rem;
+`;
+
+export const AtivacaoContainer = styled.div`
+  color: #F08080;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-top: 4rem;
+  font-weight: bold;
+  font-size: 37px;
+
+`;
+
+export const PersoContainer = styled.div`
+  color: #F08080;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-top: 4rem;
+  font-weight: bold;
+  font-size: 37px;
+
+`;
+
+export const MonitoContainer = styled.div`
   color: #F08080;
   text-align: center;
+  padding-top: 4rem;
+  font-weight: bold;
+  font-size: 37px;
+
 `;
 
-export const Text1Container = styled.div`
-  color: #6699CC;
-  margin: 1rem auto;
-  text-align: center;
-`;
-
-export const PersoContainer = styled.h2`
+export const FeedbackContainer = styled.div`
   color: #F08080;
-  margin: 1rem auto;
+  margin-bottom: 2rem;
   text-align: center;
+  padding-top: 4rem;
+  font-weight: bold;
+  font-size: 37px;
+
 `;
 
-export const Text2Container = styled.p`
-  color: #6699CC;
-  margin: 1rem auto;
-  text-align: center;
-`;
-
-export const MonitoContainer = styled.h2`
+export const DespertarContainer = styled.div`
   color: #F08080;
-  margin: 1rem auto;
+  margin-bottom: 2rem;
   text-align: center;
+  padding-top: 1.8rem;
+  font-weight: bold;
+  font-size: 37px;
+
 `;
 
-export const Text3Container = styled.p`
-  color: #6699CC;
-  margin: 1rem auto;
-  text-align: center;
-`;
-
-// Ensure FeedContainer and Text4Container are exported
-export const FeedContainer = styled.h2`
-  color: #F08080;
-  margin: 1rem auto;
-  text-align: center;
-`;
-
-export const Text4Container = styled.p`
-  color: #6699CC;
-  margin: 1rem auto;
-  text-align: center;
-`;
-
-export const DespertarContainer = styled.h2`
-  color: #F08080;
-  margin: 1rem auto;
-  text-align: center;
-`;
-
-export const Text5Container = styled.p`
-  color: #6699CC;
-  text-align: center;
-  margin: 10px 0 40px;
-`;
-
-export const IntegracaoContainer = styled.h2`
+export const IntegracaoContainer = styled.div`
   color: #F08080;
   text-align: center;
-  margin: 1rem auto;
+  padding-top: 4rem;
+  font-weight: bold;
+  font-size: 37px;
+
 `;
 
-export const Text6Container = styled.p`
+export const TextContainer1 = styled.div`
+  color: #6699CC;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: -0.5px; 
+  line-height: 1.4;
+`;
+
+export const TextContainer2 = styled.div`
   color: #6699CC;
   text-align: center;
-  margin: 10px 0 40px;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: -0.5px; 
+  line-height: 1.4; 
+
+`;
+
+export const TextContainer3 = styled.div`
+  color: #6699CC;
+  text-align: center;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: -0.5px; 
+  line-height: 1.4; 
+
+`;
+
+export const TextContainer4 = styled.div`
+  color: #6699CC;
+  text-align: center;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: -0.5px; 
+  line-height: 1.4; 
+
+`;
+
+export const TextContainer5 = styled.div`
+  color: #6699CC;
+  text-align: center;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: -0.5px; 
+  line-height: 1.4; 
+
+`;
+
+export const TextContainer6 = styled.div`
+  color: #6699CC;
+  text-align: center;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: -0.5px; 
+  line-height: 1.4; 
 `;

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
@@ -21,7 +20,6 @@ export const LogoContainer = styled.div`
   }
 `;
 
-
 export const NavContainer = styled.nav`
   display: flex;
   gap: 50px;
@@ -31,7 +29,7 @@ export const NavContainer = styled.nav`
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    gap: 55px;
   }
 
   li {
@@ -57,7 +55,6 @@ export const NavContainer = styled.nav`
     }
   }
 `;
-
 
 export const HumContainer1 = styled.h1`
   display: flex;
@@ -179,12 +176,25 @@ export const InfoContainer = styled.div`
   gap: 5px; 
 `;
 
-
-export const HumContainer2 = styled.h2`
+export const LinkContainer = styled.h5`
+  margin-top: 3rem;
   text-align: center;
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  color: #5D3FD3;
-  padding: 6% 6%;
-`;
+  font-size: 2rem;
+    ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
+  li {
+    margin: 0;
+  }
+
+  a {
+    color: ${props => props.theme.textColorLaranja};
+    font-weight: bold;
+    text-decoration: none; 
+    cursor: pointer;
+    margin: 0;
+  }
+`;

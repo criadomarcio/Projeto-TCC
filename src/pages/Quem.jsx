@@ -1,9 +1,8 @@
 import React from 'react';
 import {
-  Fun1Container, Fun2Container, Fun3Container, HeaderContainer, HumContainer1,
-  HumContainer2, ImgKayke, ImgRafael, ImgRenan, KaykeContainer, LogoContainer, NavContainer, RafaelContainer,
-  RenanContainer, CenterContainer, Container, InfoContainer
-} from './Quem.styles'; // Certifique-se de que este caminho está correto
+  Fun1Container, Fun2Container, Fun3Container, HeaderContainer, HumContainer1, ImgKayke, ImgRafael, ImgRenan, KaykeContainer, LogoContainer, NavContainer, RafaelContainer,
+  RenanContainer, CenterContainer, Container, InfoContainer, 
+  LinkContainer} from './Quem.styles'; 
 import logoImg from '../assets/logo.png';
 import Kayke from "../assets/kayke.png";
 import Renan from "../assets/renan.png";
@@ -54,10 +53,12 @@ function Quem() {
           </InfoContainer>
         </CenterContainer>
       </Container>
-
-      <li><Link to="/">Entre em contato conosco</Link></li>
+    
+      <LinkContainer>
+      <Link to="/Feedback">Entre em contato conosco</Link>
+      </LinkContainer>
+        
       
-     
     </>
   );
 }
