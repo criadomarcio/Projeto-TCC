@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderContainer, LogoContainer, NavContainer, MainContainer, Title, Subtitle, Estrelas, Footer, SaibaContainer } from "./Home.sytes"; 
+import { HeaderContainer, LogoContainer, NavContainer, MainContainer, Title, Subtitle, Estrelas, Footer, SaibaContainer } from "./Home.styles"; 
 import logoImg from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 

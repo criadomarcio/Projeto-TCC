@@ -43,6 +43,7 @@ export const FormContainer = styled.div`
   border: 2px solid #5D3FD3;
   border-radius: 8px;
   background-color: #E6E6FA;
+  
 
   h2 {
     text-align: center;

@@ -1,13 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logoImg from '../assets/logo.png';
+import Ard from "../assets/arduino.jpg";
+import Couro from "../assets/travesseiro2.jpg";
+import Diodo from "../assets/diodo.jpg";
+import Proto from "../assets/protoboard.jpg";
+import Motor from "../assets/Motor.jpg";
+import Fonte from "../assets/Fonte.jpg";
+import Rtc from "../assets/RTC.jpg";
+import Travesseiro from "../assets/travesseiro1.jpg";
+
 import { 
   HeaderContainer, 
   LogoContainer, 
   NavContainer, 
   Titulo, 
   MainContainer, 
-  Column, 
   AtivacaoContainer, 
   TextContainer1, 
   PersoContainer, 
@@ -19,7 +27,33 @@ import {
   DespertarContainer, 
   TextContainer4, 
   IntegracaoContainer, 
-  TextContainer6
+  TextContainer6,
+  Materiais,
+  TextoH1,
+  TextoH2,
+  TextoH3,
+  TextoH4,
+  TextoH5,
+  TextoH6,
+  TextoH7,
+  TextoH8,
+  TextoM1,
+  TextoM2,
+  TextoM3,
+  TextoM4,
+  TextoM5,
+  TextoM6,
+  TextoM7,
+  TextoM8,
+  ImgProto,
+  ImgArduino,
+  ImgDiodo,
+  ImgRtc,
+  ImgFonte,
+  ImgMotor,
+  ImgCouro,
+  ImgDeitante,
+  Column
 } from './Guia.styles';
 
 function Guia() {
@@ -27,24 +61,31 @@ function Guia() {
     <>
       <HeaderContainer>
         <LogoContainer>
-          <img src={logoImg} alt="Logo do site" />
+          <img src={logoImg} alt="logo do site" />
         </LogoContainer>
         <NavContainer>
           <ul>
-            <li><Link to="/">Início</Link></li>
+            <li>
+              <Link to="/">Início</Link>
+            </li>
           </ul>
           <ul>
-            <li><Link to="/Guia">Funcionamento</Link></li>
+            <li>
+              <Link to="/Guia">Funcionamento</Link>
+            </li>
           </ul>
           <ul>
-            <li><Link to="/Referencias">Referências</Link></li>
+            <li>
+              <Link to="/Referencias">Referências</Link>
+            </li>
           </ul>
           <ul>
-            <li><Link to="/Quem">Integrantes</Link></li>
+            <li>
+              <Link to="/Quem">Integrantes</Link>
+            </li>
           </ul>
         </NavContainer>
       </HeaderContainer>
-
       <Titulo>Guia de Utilização</Titulo>
 
       <MainContainer>
@@ -94,6 +135,54 @@ function Guia() {
           </IntegracaoContainer>
         </Column>
       </MainContainer>
+
+      <Materiais>Preço e função dos materiais</Materiais>
+
+        
+          <TextoH1>Protoboard</TextoH1>
+          <ImgProto src={Proto} alt="Protoboard" />
+          <TextoM1>Possibilita construir circuitos de teste sem que haja necessidade de solda, (R$ 12,50)</TextoM1>
+      
+
+        
+          <TextoH2>Placa Arduino Uno</TextoH2>
+          <ImgArduino src={Ard} alt="Arduino" />
+          <TextoM2>Controla os componentes eletrônicos do travesseiro, (R$ 99,90)</TextoM2>
+        
+
+       
+          <TextoH3>Diodo 1N4007</TextoH3>
+          <ImgDiodo src={Diodo} alt="Diodo" />
+          <TextoM3>Permite controlar o fluxo de corrente em apenas uma direção, (R$ 30,00)</TextoM3>
+
+       
+          <TextoH4>Módulo RTC DS3231</TextoH4>
+          <ImgRtc src={Rtc} alt="RTC" />
+          <TextoM4>Módulo Relógio de Tempo Real, que conta com um sensor de temperatura, (R$ 23,90)</TextoM4>
+
+        
+          <TextoH5>Motor Vibratório</TextoH5>
+          <ImgMotor src={Motor} alt="Motor Vibratório" />
+          <TextoM5>Utilizado para controlar as vibrações do travesseiro, (R$ 20,00)</TextoM5>
+
+        
+          <TextoH6>Fonte de Alimentação</TextoH6>
+          <ImgFonte src={Fonte} alt="Fonte de Alimentação" />
+          <TextoM6>Fornece energia para controlar todos os componentes do travesseiro, (R$ 8,17)</TextoM6>
+        
+
+        
+          <TextoH7>Travesseiro Ergonômico</TextoH7>
+          <ImgDeitante src={Travesseiro} alt="Travesseiro Ergonômico" />
+          <TextoM7>Oferece conforto para uma experiência de sono superior, (R$ 217,00)</TextoM7>
+        
+
+        
+          <TextoH8>Abertura em Tecido de Couro</TextoH8>
+          <ImgCouro src={Couro} alt="Couro" />
+          <TextoM8>Proteger e adicionar um compartimento para carregamento, (R$ 50,00)</TextoM8>
+        
+      
     </>
   );
 }

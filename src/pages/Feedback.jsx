@@ -10,6 +10,7 @@ const FeedbackPage = ({ children }) => {
 
 const Feedback = () => {
   return (
+    <>
     <FeedbackPage>
       <div className="info-section">
         <EntContainer>Entre em contato conosco</EntContainer>
@@ -20,6 +21,7 @@ const Feedback = () => {
         <Txt3Container>telefone@travesseirointeligente.com</Txt3Container>
       </div>
       
+      </FeedbackPage>
       <div className="form-section">
         <FormContainer>
           <h2>Envie uma mensagem</h2>
@@ -40,7 +42,7 @@ const Feedback = () => {
           </form>
         </FormContainer>
       </div>
-    </FeedbackPage>
+      </>
   );
 };
 
