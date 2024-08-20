@@ -89,7 +89,7 @@ export function Guia() {
             </div>
             
             <div className="mobile-menu-icon">
-            <button onClick={menuShow}><img className="icon" src={isOpen ? closeIcon : menuOpenIcon} alt="Menu Icon" /></button>
+            <button onClick={menuShow}><img className="icon" src={menuOpenIcon} alt="Menu Icon" /></button>
             </div>
           </nav>
           <div className="mobile-menu">

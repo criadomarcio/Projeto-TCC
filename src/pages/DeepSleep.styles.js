@@ -428,8 +428,9 @@ export const TextPub1 = styled.p`
   color: ${props => props.theme.textColorAzul};
   margin-top: 1rem;
   margin-left: 10rem;
-  margin-right: 89.3rem;
-  font-size: 1.3rem;
+  margin-right: 90rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -441,10 +442,10 @@ export const TextPub1 = styled.p`
 // Texto Público 2
 export const TextPub2 = styled.p`
   color: ${props => props.theme.textColorAzul};
-  margin-left: 80rem;
-  margin-right: 48rem;
-  font-size: 1.3rem;
-  margin-top: -10rem;
+  margin-left: 50rem;
+  margin-right: 45rem;
+  font-size: 1.5rem;
+  margin-top: -4rem;
   text-align: left;
 
   @media (max-width: 768px) {
@@ -457,10 +458,10 @@ export const TextPub2 = styled.p`
 // Texto Público 3
 export const TextPub3 = styled.p`
   color: ${props => props.theme.textColorAzul};
-  margin-top: -12rem;
-  margin-left: 80rem;
-  font-size: 1.3rem;
-  margin-right: 5rem;
+  margin-top: -5rem;
+  margin-left: 90rem;
+  font-size: 1.5rem;
+  margin-right: 8rem;
   text-align: left;
   @media (max-width: 768px) {
     margin-left: 1rem;
