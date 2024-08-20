@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
-
-//ajuste a responsividade dessa pagina por favor 
 export const EntContainer = styled.h1`
   text-align: left;
   margin-left: 4rem;
   color: #5D3FD3;
   margin-top: 10rem;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
 `;
 
 export const TxtContainer = styled.p`
@@ -15,6 +19,12 @@ export const TxtContainer = styled.p`
   margin-right: 70rem;
   color: #6699CC;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+  }
 `;
 
 export const SubtitleContainer = styled.h2`
@@ -22,15 +32,24 @@ export const SubtitleContainer = styled.h2`
   margin-left: 4rem;
   color: #5D3FD3;
   text-align: left;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
 `;
 
 export const Txt2Container = styled.p`
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-left: 4rem;
   color: #6699CC;
   text-align: left;
-  font-size: 1.5rem;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
 `;
 
 export const Sub2titleContainer = styled.h3`
@@ -38,15 +57,24 @@ export const Sub2titleContainer = styled.h3`
   margin-left: 4rem;
   color: #5D3FD3;
   text-align: left;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+  }
 `;
 
 export const Txt3Container = styled.p`
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-left: 4rem;
   color: #6699CC;
   text-align: left;
-  font-size: 1.5rem;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
 `;
 
 export const FormContainer = styled.div`
@@ -59,7 +87,6 @@ export const FormContainer = styled.div`
   margin-left: 70rem;
   margin-top: -20rem;
 
-
   h2 {
     text-align: center;
     color: #5D3FD3;
@@ -70,48 +97,13 @@ export const FormContainer = styled.div`
     flex-direction: column;
     gap: 1rem;
   }
-`;
 
-export const FormGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-`;
-
-export const FormLabel = styled.label`
-  font-size: 1rem;
-  color: #5D3FD3;
-`;
-
-export const FormInput = styled.input`
-  padding: 0.75rem;
-  border: 1px solid #5D3FD3;
-  border-radius: 4px;
-`;
-
-export const FormTextArea = styled.textarea`
-  padding: 0.75rem;
-  border: 1px solid #5D3FD3;
-  border-radius: 4px;
-`;
-
-export const SubmitButton = styled.button`
-  background-color: #5D3FD3;
-  color: #FFFFFF;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s, color 0.3s;
-  border: 1px solid #5D3FD3;
-
-  &:hover {
-    background-color: #FFFFFF;
-    color: #5D3FD3; 
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 0;
+    max-width: 100%;
   }
 `;
-
 
 export const FeedbackContainer = styled.div`
   align-items: flex-start;
@@ -135,16 +127,15 @@ export const FeedbackContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-  .info-section, .form-section {
-    flex: 1 1 100%; 
-    margin-right: 0;
-  }
+    .info-section, .form-section {
+      flex: 1 1 100%; 
+      margin-right: 0;
+    }
   
-  .feedback-page {
-    flex-direction: column;
+    .feedback-page {
+      flex-direction: column;
+    }
   }
-}
-
 `;
 
 export const Contato = styled.div`
@@ -165,44 +156,63 @@ export const Contato = styled.div`
   }
 
   .redes {
-  position: relative; /* Torna o contêiner relativo para posicionar os textos */
-  margin-left: 40rem;
-  margin-top: -7rem;
-  color: ${props => props.theme.textColorVerde};
-}
+    position: relative; /* Torna o contêiner relativo para posicionar os textos */
+    margin-left: 40rem;
+    margin-top: -7rem;
+    color: ${props => props.theme.textColorVerde};
+  }
 
-.redes img {
-  display: block;
-  margin-top: 0.5rem;
-  position: relative; 
-}
+  .redes img {
+    display: block;
+    margin-top: 0.5rem;
+    position: relative; 
+  }
 
-.numero, .instagram, .tiktok {
-  position: absolute;
-  left: 0;
-  top: 50%; 
-  transform: translateY(-50%); 
-  margin-left: 1rem; 
-}
+  .numero, .instagram, .tiktok {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
+    margin-left: 1rem; 
+  }
 
-.numero {
-  font-size: 1.2rem;
-  margin-left: 3rem;
-  margin-top: -1.5rem;
-  color: ${props => props.theme.textColorLaranja};
-}
+  .numero {
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    margin-top: -1.5rem;
+    color: ${props => props.theme.textColorLaranja};
+  }
 
-.instagram {
-  font-size: 1.2rem;
-  margin-left: 3rem;
-  margin-top: 1rem;
-  color: ${props => props.theme.textColorLaranja};
-}
+  .instagram {
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    color: ${props => props.theme.textColorLaranja};
+  }
 
-.tiktok {
-  font-size: 1.2rem;
-  margin-left: 3rem;
-  margin-top: 3.5rem;
-  color: ${props => props.theme.textColorLaranja};
-}
+  .tiktok {
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    margin-top: 3.5rem;
+    color: ${props => props.theme.textColorLaranja};
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+
+    .contato h5 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .contato p {
+      margin-right: 0;
+      font-size: 1rem;
+    }
+
+    .redes {
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+  }
 `;

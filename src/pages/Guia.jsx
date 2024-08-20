@@ -12,6 +12,7 @@ import Travesseiro from "../assets/travesseiro1.jpg";
 import menuOpenIcon from '../assets/list.svg'; 
 import closeIcon from '../assets/x.svg';
 
+
 import { 
   HeaderContainer,  
   Titulo, 
@@ -152,6 +153,8 @@ export function Home() {
           </IntegracaoContainer>
         </Column>
       </MainContainer>
+
+
 
       <Materiais>Preço e função dos materiais</Materiais>
 
