@@ -302,6 +302,205 @@ export const TextContainer3 = styled.div`
   }
 `;
 
+export const TextContainer4 = styled.div`
+  color: #6699CC;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px; 
+  line-height: 1.4; 
+  margin-left: 9.5rem;
+  margin-right: 6rem;
+  margin-top: 1rem;
+`;
+
+export const TextContainer5 = styled.div`
+  color: #6699CC;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px; 
+  line-height: 1.4;
+  margin-left: 16rem;
+  margin-right: 15rem;
+  margin-top: 1rem;
+`;
+
+export const TextContainer6 = styled.div`
+  color: #6699CC;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px; 
+  line-height: 1.4; 
+  margin-left: 9.5rem;
+  margin-right: 6rem;
+  margin-top: 1rem;
+`;
+
+
+
+
+export const Materiais = styled.h1`
+  color: ${props => props.theme.header}; 
+  text-align: center;
+  margin-top: 15rem;
+  width: 100%;
+`;
+
+export const TextoH1 = styled.h4`
+  color: ${props => props.theme.textColorLaranja};
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 13.7rem;
+  margin-top: 6rem;
+`;
+
+export const TextoM1 = styled.p`
+  color: ${props => props.theme.textColorAzul};
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  max-width: 500px;
+  margin-left: 1.5rem;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+`;
+
+export const TextoH2 = styled.h4`
+  color: ${props => props.theme.textColorLaranja};
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 39.8rem;
+  margin-top: -24.18rem;
+`;
+
+export const TextoM2 = styled.p`
+  color: ${props => props.theme.textColorAzul};
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 30rem;
+  max-width: 500px;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+`;
+
+export const TextoH3 = styled.h4`
+  color: ${props => props.theme.textColorLaranja};
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 68.3rem;
+  margin-top: -24.18rem;
+`;
+
+export const TextoM3 = styled.p`
+  color: ${props => props.theme.textColorAzul};
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  max-width: 500px;
+  line-height: 1.2;
+  margin-left: 57.5rem;
+  margin-top: 0.5rem;
+`;
+
+
+export const TextoH4 = styled.h4`
+  color: ${props => props.theme.textColorLaranja};
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 96rem;
+  margin-top: -24.18rem;
+`;
+
+export const TextoM4 = styled.p`
+  color: ${props => props.theme.textColorAzul};
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  max-width: 500px;
+  line-height: 1.2;
+  margin-left: 88rem;
+  margin-top: 0.5rem;
+`;
+
+export const TextoH5 = styled.h4`
+  color: ${props => props.theme.textColorLaranja};
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 12rem;
+  margin-top: 10rem;
+`;
+
+export const TextoM5 = styled.p`
+  color: ${props => props.theme.textColorAzul};
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  max-width: 500px;
+  line-height: 1.2;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+`;
+
+export const TextoH6 = styled.h4`
+  color: ${props => props.theme.textColorLaranja};
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 40rem;
+  margin-top: -24.18rem;
+`;
+
+export const TextoM6 = styled.p`
+  color: ${props => props.theme.textColorAzul};
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  max-width: 500px;
+  line-height: 1.2;
+  margin-left: 30rem;
+  margin-top: 0.5rem;
+`;
+
+export const TextoH7 = styled.h4`
+  color: ${props => props.theme.textColorLaranja};
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 65rem;
+  margin-top: -24.18rem;
+`;
+
+export const TextoM7 = styled.p`
+  color: ${props => props.theme.textColorAzul};
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  max-width: 500px;
+  line-height: 1.2;
+  margin-left: 58rem;
+  margin-top: 0.5rem;
+`;
+
+export const TextoH8 = styled.h4`
+  color: ${props => props.theme.textColorLaranja};
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 93rem;
+  margin-top: -24.18rem;
+`;
+
+export const TextoM8 = styled.p`
+  color: ${props => props.theme.textColorAzul};
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  max-width: 500px;
+  line-height: 1.2;
+  margin-left: 88rem;
+  margin-top: 0.5rem;
+`;
+
 // Adicione as media queries semelhantes para os outros TextContainers...
 
 export const MainContainertwo = styled.div`

@@ -77,6 +77,45 @@ export const Txt3Container = styled.p`
   }
 `;
 
+export const FormGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+
+export const FormLabel = styled.label`
+  font-size: 1rem;
+  color: #5D3FD3;
+`;
+
+export const FormInput = styled.input`
+  padding: 0.75rem;
+  border: 1px solid #5D3FD3;
+  border-radius: 4px;
+`;
+
+export const FormTextArea = styled.textarea`
+  padding: 0.75rem;
+  border: 1px solid #5D3FD3;
+  border-radius: 4px;
+`;
+
+export const SubmitButton = styled.button`
+  background-color: #5D3FD3;
+  color: #FFFFFF;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #5D3FD3;
+  &:hover {
+    background-color: #FFFFFF;
+    color: #5D3FD3; 
+  }
+`;
+
 export const FormContainer = styled.div`
   margin: 2rem auto;
   max-width: 600px;

@@ -57,7 +57,7 @@ import {
   Column
 } from './Guia.styles';
 
-export function Home() {
+export function Guia() {
   
   const menuShow = () => {
     const menuMobile = document.querySelector('.mobile-menu');
