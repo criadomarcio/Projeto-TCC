@@ -56,7 +56,8 @@ import {
   Column
 } from './Guia.styles';
 
-function Guia() {
+export function Home() {
+  
   const menuShow = () => {
     const menuMobile = document.querySelector('.mobile-menu');
     const icon = document.querySelector('.icon');
@@ -87,7 +88,7 @@ function Guia() {
             </div>
             
             <div className="mobile-menu-icon">
-              <button onClick={menuShow}><img className="icon" src={menuOpenIcon} alt="Menu Icon" /></button>
+            <button onClick={menuShow}><img className="icon" src={isOpen ? closeIcon : menuOpenIcon} alt="Menu Icon" /></button>
             </div>
           </nav>
           <div className="mobile-menu">
@@ -99,7 +100,8 @@ function Guia() {
             </ul>
           </div>
         </header>
-      </HeaderContainer>
+      </HeaderContainer>  
+
 
       <Titulo>Guia de Utilização</Titulo>
 

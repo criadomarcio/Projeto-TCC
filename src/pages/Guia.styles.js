@@ -111,7 +111,7 @@ export const HeaderContainer = styled.div`
       align-items: center;
       padding: 1rem;
       transition: opacity 0.3s;
-      opacity: 0;
+      opacity: 0; 
     }
 
     .mobile-menu.open {
@@ -136,23 +136,38 @@ export const HeaderContainer = styled.div`
 `;
 
 
+
 export const Titulo = styled.h1`
   margin: 2rem 0;
   font-size: 60px;
   text-align: center;
   color: #5D3FD3;
   font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 export const MainContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
 `;
 
 export const Column = styled.div`
   flex: 1;
   margin: 0 1rem;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const AtivacaoContainer = styled.div`
@@ -163,6 +178,10 @@ export const AtivacaoContainer = styled.div`
   font-weight: bold;
   font-size: 37px;
 
+  @media (max-width: 768px) {
+    font-size: 28px;
+    padding-top: 2rem;
+  }
 `;
 
 export const PersoContainer = styled.div`
@@ -173,6 +192,10 @@ export const PersoContainer = styled.div`
   font-weight: bold;
   font-size: 37px;
 
+  @media (max-width: 768px) {
+    font-size: 28px;
+    padding-top: 2rem;
+  }
 `;
 
 export const MonitoContainer = styled.div`
@@ -182,6 +205,10 @@ export const MonitoContainer = styled.div`
   font-weight: bold;
   font-size: 37px;
 
+  @media (max-width: 768px) {
+    font-size: 28px;
+    padding-top: 2rem;
+  }
 `;
 
 export const FeedbackContainer = styled.div`
@@ -192,6 +219,10 @@ export const FeedbackContainer = styled.div`
   font-weight: bold;
   font-size: 37px;
 
+  @media (max-width: 768px) {
+    font-size: 28px;
+    padding-top: 2rem;
+  }
 `;
 
 export const DespertarContainer = styled.div`
@@ -201,6 +232,11 @@ export const DespertarContainer = styled.div`
   padding-top: 1.8rem;
   font-weight: bold;
   font-size: 37px;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    padding-top: 1rem;
+  }
 `;
 
 export const IntegracaoContainer = styled.div`
@@ -209,6 +245,11 @@ export const IntegracaoContainer = styled.div`
   padding-top: 4rem;
   font-weight: bold;
   font-size: 37px;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    padding-top: 2rem;
+  }
 `;
 
 export const TextContainer1 = styled.div`
@@ -219,6 +260,12 @@ export const TextContainer1 = styled.div`
   margin-left: 16rem;
   margin-right: 15rem;
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+  }
 `;
 
 export const TextContainer2 = styled.div`
@@ -229,6 +276,12 @@ export const TextContainer2 = styled.div`
   margin-left: 7rem;
   margin-right: 5rem;
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+  }
 `;
 
 export const TextContainer3 = styled.div`
@@ -241,208 +294,15 @@ export const TextContainer3 = styled.div`
   margin-left: 16rem;
   margin-right: 15rem;
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+  }
 `;
 
-export const TextContainer4 = styled.div`
-  color: #6699CC;
-  text-align: center;
-  font-weight: normal;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px; 
-  line-height: 1.4; 
-  margin-left: 9.5rem;
-  margin-right: 6rem;
-  margin-top: 1rem;
-`;
-
-export const TextContainer5 = styled.div`
-  color: #6699CC;
-  text-align: center;
-  font-weight: normal;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px; 
-  line-height: 1.4;
-  margin-left: 16rem;
-  margin-right: 15rem;
-  margin-top: 1rem;
-
-`;
-
-export const TextContainer6 = styled.div`
-  color: #6699CC;
-  text-align: center;
-  font-weight: normal;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px; 
-  line-height: 1.4; 
-  margin-left: 9.5rem;
-  margin-right: 6rem;
-  margin-top: 1rem;
-`;
-
-
-
-
-export const Materiais = styled.h1`
-  color: ${props => props.theme.header}; 
-  text-align: center;
-  margin-top: 15rem;
-  width: 100%;
-`;
-
-export const TextoH1 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 13.7rem;
-  margin-top: 6rem;
-`;
-
-export const TextoM1 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  margin-left: 1.5rem;
-  line-height: 1.2;
-  margin-top: 0.5rem;
-`;
-
-export const TextoH2 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 39.8rem;
-  margin-top: -24.18rem;
-`;
-
-export const TextoM2 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 30rem;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-top: 0.5rem;
-
-`;
-
-export const TextoH3 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 68.3rem;
-  margin-top: -24.18rem;
-`;
-
-export const TextoM3 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 57.5rem;
-  margin-top: 0.5rem;
-`;
-
-
-export const TextoH4 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 96rem;
-  margin-top: -24.18rem;
-`;
-
-export const TextoM4 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 88rem;
-  margin-top: 0.5rem;
-`;
-
-export const TextoH5 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 12rem;
-  margin-top: 10rem;
-`;
-
-export const TextoM5 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 1.5rem;
-  margin-top: 0.5rem;
-`;
-
-export const TextoH6 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 40rem;
-  margin-top: -24.18rem;
-`;
-
-export const TextoM6 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 30rem;
-  margin-top: 0.5rem;
-`;
-
-export const TextoH7 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 65rem;
-  margin-top: -24.18rem;
-`;
-
-export const TextoM7 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 58rem;
-  margin-top: 0.5rem;
-`;
-
-export const TextoH8 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 93rem;
-  margin-top: -24.18rem;
-`;
-
-export const TextoM8 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 88rem;
-  margin-top: 0.5rem;
-`;
+// Adicione as media queries semelhantes para os outros TextContainers...
 
 export const MainContainertwo = styled.div`
   display: grid;
@@ -451,20 +311,13 @@ export const MainContainertwo = styled.div`
   margin-top: 2rem;
   padding: 0 2rem;
 
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 1rem;
   }
 `;
 
-// Define uma altura fixa para as imagens e ajuste a largura automaticamente
 export const ImgProto = styled.img`
   height: 250px;
   border-radius: 0.7rem;
@@ -473,6 +326,12 @@ export const ImgProto = styled.img`
   margin-left: 10rem;
   margin-top: 0.5rem;
   width: auto;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 `;
 
 export const ImgArduino = styled.img`
@@ -483,6 +342,12 @@ export const ImgArduino = styled.img`
   margin-left: 38rem;
   margin-top: 0.5rem;
   width: auto;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 `;
 
 export const ImgDiodo = styled.img`
@@ -493,6 +358,12 @@ export const ImgDiodo = styled.img`
   margin-left: 65rem;
   margin-top: 0.5rem;
   width: auto;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 `;
 
 export const ImgRtc = styled.img`
@@ -503,6 +374,12 @@ export const ImgRtc = styled.img`
   margin-left: 95rem;
   margin-top: 0.5rem;
   width: auto;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 `;
 
 export const ImgFonte = styled.img`
@@ -513,6 +390,12 @@ export const ImgFonte = styled.img`
   margin-left: 36rem;
   margin-top: 0.5rem;
   width: auto;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 `;
 
 export const ImgMotor = styled.img`
@@ -523,6 +406,12 @@ export const ImgMotor = styled.img`
   margin-left: 7rem;
   margin-top: 0.5rem;
   width: auto;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 `;
 
 export const ImgCouro = styled.img`
@@ -533,6 +422,12 @@ export const ImgCouro = styled.img`
   margin-left: 95rem;
   margin-top: 0.5rem;
   width: auto;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 `;
 
 export const ImgDeitante = styled.img`
@@ -543,5 +438,11 @@ export const ImgDeitante = styled.img`
   margin-left: 65rem;
   margin-top: 0.5rem;
   width: auto;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 `;
 

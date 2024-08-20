@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+
+//ajuste a responsividade dessa pagina por favor 
 export const EntContainer = styled.h1`
   text-align: left;
   margin-left: 4rem;
