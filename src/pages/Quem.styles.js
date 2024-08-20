@@ -1,57 +1,137 @@
 import styled from 'styled-components';
 
-export const HeaderContainer = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+// Container do Header
+export const HeaderContainer = styled.div`
   background: ${props => props.theme.header};
-  padding: 10px 20px;
+  padding: 1rem;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
+  .header {
+    background-color: #00040D; 
+    box-shadow: 0px 3px 10px #464646; 
   }
-`;
 
-export const LogoContainer = styled.div`
-  img {
-    width: 120px;
-    height: auto;
-  }
-`;
-
-export const NavContainer = styled.nav`
-  display: flex;
-  gap: 50px;
-
-  ul {
-    list-style: none;
+  .nav-bar img {
     padding: 0;
-    margin: 0;
+    height: 65px; 
+    width: auto;
+  }
+
+  .nav-bar {
     display: flex;
-    gap: 55px;
+    justify-content: space-between;
+    padding: 0; 
+    align-items: center;
   }
 
-  li {
-    margin: 0;
+  .nav-list {
+    display: flex;
+    align-items: center;
   }
 
-  a {
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .nav-item {
+    margin: 0 15px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 24px; 
     color: ${props => props.theme.textColorLaranja};
-    font-weight: bold;
-    text-decoration: none; 
+    font-weight: 400;
     cursor: pointer;
+    border: none;
+    text-align: right;
   }
 
-  a:hover {
-    color: ${props => props.theme.textColorLaranjaHover};
+  .nav-link:hover {
+    color: ${props => props.theme.textColorLaranja}; 
   }
 
-  @media (max-width: 768px) {
-    gap: 20px;
-    ul {
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  @media screen and (max-width: 730px) {
+    background: ${props => props.theme.header};
+    margin-top: -3rem;
+
+    .nav-bar {
+      padding: 1.5rem 2rem;
+    }
+
+    .logo{
+      margin-left: -2rem;
+      margin-top: 2.8rem;
+    }
+
+    .nav-item {
+      display: none;
+    }
+
+    .mobile-menu-icon {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      background-color: ${props => props.theme.header}; 
+      z-index: 1000;
+    }
+
+    .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-menu-icon .icon {
+      margin-top: 1.9rem;
+      width: 40px;
+      height: 40px;
+      color: ${props => props.theme.textColorLaranja}; 
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 1rem; 
+      right: -0.1rem; 
+      width: 200px;
+      background: ${props => props.theme.header}; 
+      border-radius: 0.5rem;
+      display: none; 
+      align-items: center;
+      padding: 1rem;
+      transition: opacity 0.3s;
+      opacity: 0; 
+    }
+
+    .mobile-menu.open {
+      display: flex; 
+      opacity: 1; 
+    }
+
+    .mobile-menu ul {
+      display: flex;
       flex-direction: column;
-      gap: 10px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    .mobile-menu .nav-item {
+      display: block;
+      padding: 1rem;
     }
   }
 `;

@@ -1,8 +1,13 @@
 import React from 'react';
 import {
   EntContainer, SubtitleContainer, TxtContainer, Txt2Container, Sub2titleContainer, Txt3Container, 
-  FormContainer, FormGroup, FormLabel, FormInput, FormTextArea, SubmitButton 
+  FormContainer, FormGroup, FormLabel, FormInput, FormTextArea, SubmitButton, 
+  Contato
 } from './Feedback.style'; // Ajuste o caminho se necessário
+
+import whats from "../assets/whatsapp-logo.svg"
+import insta from "../assets/instagram.svg"
+import ttk from "../assets/tiktok.svg"
 
 const FeedbackPage = ({ children }) => {
   return <div className="feedback-page">{children}</div>;
@@ -41,6 +46,27 @@ const Feedback = () => {
             <SubmitButton type="submit">Enviar Mensagem</SubmitButton>
           </form>
         </FormContainer>
+
+      <Contato>
+        <div class="contato">
+        <h5>Contato</h5>
+        <p>Entre em contato conosco para mais informações sobre o travesseiro inteligente.</p>
+        </div>
+
+        <div class="redes">
+          <h5>Redes Sociais</h5>
+          <p class="numero">+55 11 98765-4321</p>
+          <img src={whats} class="zap" alt="zap" />
+          <p class="instagram">@Deep_Sleep</p>
+          <img src={insta} class="insta" alt="instagram" />
+          <p class="tiktok">Deep_Sleep</p>
+          <img src={ttk} class="ttk" alt="tiktok" />
+          
+        </div>
+        
+
+      </Contato>
+
       </div>
       </>
   );

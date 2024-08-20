@@ -2,38 +2,49 @@ import styled from 'styled-components';
 
 export const EntContainer = styled.h1`
   text-align: left;
+  margin-left: 4rem;
   color: #5D3FD3;
-  margin-top: 2rem;
+  margin-top: 10rem;
 `;
 
 export const TxtContainer = styled.p`
   text-align: left;
-  margin: 1rem 0;
+  margin-left: 4rem;
+  margin-right: 70rem;
   color: #6699CC;
+  margin-top: 2rem;
 `;
 
 export const SubtitleContainer = styled.h2`
   margin-top: 2rem;
+  margin-left: 4rem;
   color: #5D3FD3;
   text-align: left;
 `;
 
 export const Txt2Container = styled.p`
   font-size: 1.1rem;
+  margin-left: 4rem;
   color: #6699CC;
   text-align: left;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 `;
 
 export const Sub2titleContainer = styled.h3`
   margin-top: 1.5rem;
+  margin-left: 4rem;
   color: #5D3FD3;
   text-align: left;
 `;
 
 export const Txt3Container = styled.p`
   font-size: 1.1rem;
+  margin-left: 4rem;
   color: #6699CC;
   text-align: left;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 `;
 
 export const FormContainer = styled.div`
@@ -43,7 +54,9 @@ export const FormContainer = styled.div`
   border: 2px solid #5D3FD3;
   border-radius: 8px;
   background-color: #E6E6FA;
-  
+  margin-left: 70rem;
+  margin-top: -20rem;
+
 
   h2 {
     text-align: center;
@@ -132,3 +145,62 @@ export const FeedbackContainer = styled.div`
 
 `;
 
+export const Contato = styled.div`
+  background: ${props => props.theme.header};
+  margin-top: 6rem;
+  padding: 5rem;
+
+  .contato h5 {
+    margin-top: -3rem;  
+    color: ${props => props.theme.textColorVerde};
+  }
+
+  .contato p {
+    margin-right: 85rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: ${props => props.theme.textColorLaranja};
+  }
+
+  .redes {
+  position: relative; /* Torna o contêiner relativo para posicionar os textos */
+  margin-left: 40rem;
+  margin-top: -7rem;
+  color: ${props => props.theme.textColorVerde};
+}
+
+.redes img {
+  display: block;
+  margin-top: 0.5rem;
+  position: relative; 
+}
+
+.numero, .instagram, .tiktok {
+  position: absolute;
+  left: 0;
+  top: 50%; 
+  transform: translateY(-50%); 
+  margin-left: 1rem; 
+}
+
+.numero {
+  font-size: 1.2rem;
+  margin-left: 3rem;
+  margin-top: -1.5rem;
+  color: ${props => props.theme.textColorLaranja};
+}
+
+.instagram {
+  font-size: 1.2rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  color: ${props => props.theme.textColorLaranja};
+}
+
+.tiktok {
+  font-size: 1.2rem;
+  margin-left: 3rem;
+  margin-top: 3.5rem;
+  color: ${props => props.theme.textColorLaranja};
+}
+`;

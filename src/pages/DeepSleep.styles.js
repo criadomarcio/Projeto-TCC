@@ -1,65 +1,138 @@
 import styled from "styled-components";
 
 // Container do Header
-export const HeaderContainer = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+export const HeaderContainer = styled.div`
   background: ${props => props.theme.header};
-  padding: 10px 20px;
+  padding: 1rem;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-`;
-
-// Container do Logo
-export const LogoContainer = styled.div`
-  img {
-    width: 120px;
-    height: auto;
+  .header {
+    background-color: #00040D; 
+    box-shadow: 0px 3px 10px #464646; 
   }
 
-  @media (max-width: 768px) {
-    img {
-      width: 100px;
-    }
-  }
-`;
-
-// Container da Navegação
-export const NavContainer = styled.nav`
-  display: flex;
-  gap: 50px;
-
-  ul {
-    list-style: none;
+  .nav-bar img {
     padding: 0;
-    margin: 0;
+    height: 65px; 
+    width: auto;
   }
 
-  li {
-    margin: 0;
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0; 
+    align-items: center;
   }
 
-  a {
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .nav-item {
+    margin: 0 15px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 24px; 
     color: ${props => props.theme.textColorLaranja};
-    font-weight: bold;
-    text-decoration: none; 
+    font-weight: 400;
     cursor: pointer;
-    margin: 0;
+    border: none;
+    text-align: right;
   }
 
-  a:hover {
-    color: ${props => props.theme.textColorLaranjaHover};
+  .nav-link:hover {
+    color: ${props => props.theme.textColorLaranja}; 
   }
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  @media screen and (max-width: 730px) {
+    background: ${props => props.theme.header};
+    margin-top: -3rem;
+
+    .nav-bar {
+      padding: 1.5rem 2rem;
+    }
+
+    .logo{
+      margin-left: -2rem;
+      margin-top: 2.8rem;
+    }
+
+    .nav-item {
+      display: none;
+    }
+
+    .mobile-menu-icon {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      background-color: ${props => props.theme.header}; 
+      z-index: 1000;
+    }
+
+    .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-menu-icon .icon {
+      margin-top: 1.9rem;
+      width: 40px;
+      height: 40px;
+      color: ${props => props.theme.textColorLaranja}; 
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 1rem; 
+      right: -0.1rem; 
+      width: 200px;
+      background: ${props => props.theme.header}; 
+      border-radius: 0.5rem;
+      display: none; 
+      align-items: center;
+      padding: 1rem;
+      transition: opacity 0.3s;
+      opacity: 0; 
+    }
+
+    .mobile-menu.open {
+      display: flex; 
+      opacity: 1; 
+    }
+
+    .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    .mobile-menu .nav-item {
+      display: block;
+      padding: 1rem;
+    }
   }
 `;
 
@@ -366,10 +439,11 @@ export const TextPub1 = styled.p`
 // Texto Público 2
 export const TextPub2 = styled.p`
   color: ${props => props.theme.textColorAzul};
-  margin-left: 50rem;
+  margin-left: 80rem;
   margin-right: 48rem;
   font-size: 1.3rem;
-  margin-top: -3.2rem;
+  margin-top: -10rem;
+  text-align: left;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -381,11 +455,11 @@ export const TextPub2 = styled.p`
 // Texto Público 3
 export const TextPub3 = styled.p`
   color: ${props => props.theme.textColorAzul};
-  margin-top: -4rem;
-  margin-left: 90rem;
+  margin-top: -12rem;
+  margin-left: 80rem;
   font-size: 1.3rem;
   margin-right: 5rem;
-
+  text-align: left;
   @media (max-width: 768px) {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -495,3 +569,4 @@ export const TextOb3 = styled.p`
     font-size: 1rem;
   }
 `;
+

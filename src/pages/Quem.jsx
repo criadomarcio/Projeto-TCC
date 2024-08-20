@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Fun1Container, Fun2Container, Fun3Container, HeaderContainer, HumContainer1, ImgKayke, ImgRafael, ImgRenan, KaykeContainer, LogoContainer, NavContainer, RafaelContainer,
+  Fun1Container, Fun2Container, Fun3Container, HeaderContainer, HumContainer1, ImgKayke, ImgRafael, ImgRenan, KaykeContainer, RafaelContainer,
   RenanContainer, CenterContainer, Container, InfoContainer, 
   LinkContainer} from './Quem.styles'; 
 import logoImg from '../assets/logo.png';
@@ -8,22 +8,52 @@ import Kayke from "../assets/kayke.png";
 import Renan from "../assets/renan.png";
 import Rafael from "../assets/rafael.png";
 import { Link } from 'react-router-dom';
+import menuOpenIcon from '../assets/list.svg'; 
+import closeIcon from '../assets/x.svg';
 
 function Quem() {
+  const menuShow = () => {
+    const menuMobile = document.querySelector('.mobile-menu');
+    const icon = document.querySelector('.icon');
+    if (menuMobile.classList.contains('open')) {
+      menuMobile.classList.remove('open');
+      icon.src = menuOpenIcon;  
+    } else {
+      menuMobile.classList.add('open');
+      icon.src = closeIcon;  
+    }
+  };
+
   return (
     <>
-      <HeaderContainer>
-        <LogoContainer>
-          <img src={logoImg} alt="Logo do site" />
-        </LogoContainer>
-        <NavContainer>
-          <ul>
-            <li><Link to="/">Início</Link></li>
-            <li><Link to="/Guia">Funcionamento</Link></li>
-            <li><Link to="/Referencias">Referências</Link></li>
-            <li><Link to="/Quem">Integrantes</Link></li>
-          </ul>
-        </NavContainer>
+      <HeaderContainer>  
+        <header>
+          <nav className="nav-bar">
+            <div className="logo">
+              <img src={logoImg} alt="Logo da Deep Sleep" />
+            </div>
+            <div className="nav-list">
+              <ul>
+                <li className="nav-item"><Link to="/" className="nav-link">Início</Link></li>
+                <li className="nav-item"><Link to="/Guia" className="nav-link">Funcionamento</Link></li>
+                <li className="nav-item"><Link to="/Referencias" className="nav-link">Referências</Link></li> 
+                <li className="nav-item"><Link to="/Quem" className="nav-link">Integrantes</Link></li>
+              </ul>
+            </div>
+            
+            <div className="mobile-menu-icon">
+              <button onClick={menuShow}><img className="icon" src={menuOpenIcon} alt="Menu Icon" /></button>
+            </div>
+          </nav>
+          <div className="mobile-menu">
+            <ul>
+              <li className="nav-item"><Link to="/" className="nav-link">Início</Link></li>
+              <li className="nav-item"><Link to="/Guia" className="nav-link">Funcionamento</Link></li>
+              <li className="nav-item"><Link to="/Referencias" className="nav-link">Referências</Link></li> 
+              <li className="nav-item"><Link to="/Quem" className="nav-link">Integrantes</Link></li>
+            </ul>
+          </div>
+        </header>
       </HeaderContainer>
 
       <HumContainer1>Quem somos?</HumContainer1>

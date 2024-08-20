@@ -2,36 +2,60 @@ import React from 'react';
 import logoImg from "../assets/logo.png";
 import travesseiro from "../assets/travesseiro.png";
 import { Link } from 'react-router-dom';
-import { HeaderContainer, ImagemContainer, LogoContainer, MaisContainer, NavContainer, TextContainer,NumerosContainer, Imagem1, TextTec1, TextH1, TextH2, TextTec2, TextTec3, TextH3, Tecnologia, Subtitulo, Publico, Subtitulo1, ImagemP1, TextPub1, TextPub2, TextPub3, Objetivo, TextoH1, TextoH2, TextoH3, TextOb1, TextOb2, TextOb3 } from './DeepSleep.styles';
+import { HeaderContainer, ImagemContainer, MaisContainer, TextContainer,NumerosContainer, Imagem1, TextTec1, TextH1, TextH2, TextTec2, TextTec3, TextH3, Tecnologia, Subtitulo, Publico, Subtitulo1, ImagemP1, TextPub1, TextPub2, TextPub3, Objetivo, TextoH1, TextoH2, TextoH3, TextOb1, TextOb2, TextOb3 } from './DeepSleep.styles';
 import Tecno1 from "../assets/tecnologia1.png";
 import Tecno2 from "../assets/tecnologia2.png";
 import Tecno3 from "../assets/tecnologia3.png";
 import Men from "../assets/menino.jpg";
 import Dorm from "../assets/dormindo.jpg";
 import Insonia from "../assets/insonia.png";
+import menuOpenIcon from '../assets/list.svg'; 
+import closeIcon from '../assets/x.svg';
 
 
 function DeepSleep() {
+  const menuShow = () => {
+    const menuMobile = document.querySelector('.mobile-menu');
+    const icon = document.querySelector('.icon');
+    if (menuMobile.classList.contains('open')) {
+      menuMobile.classList.remove('open');
+      icon.src = menuOpenIcon;  
+    } else {
+      menuMobile.classList.add('open');
+      icon.src = closeIcon;  
+    }
+  };
+
   return (
     <>
-      <HeaderContainer>
-        <LogoContainer>
-          <img src={logoImg} alt="logo do site" />
-        </LogoContainer>
-        <NavContainer>
-          <ul>
-            <li><Link to="/">Início</Link></li>
-          </ul>
-          <ul>
-            <li><Link to="/Guia">Funcionamento</Link></li>
-          </ul>
-          <ul>
-            <li><Link to="/Referencias">Referências</Link></li>
-          </ul>
-          <ul>
-            <li><Link to="/Quem">Integrantes</Link></li>
-          </ul>
-        </NavContainer>
+      <HeaderContainer>  
+        <header>
+          <nav className="nav-bar">
+            <div className="logo">
+              <img src={logoImg} alt="Logo da Deep Sleep" />
+            </div>
+            <div className="nav-list">
+              <ul>
+                <li className="nav-item"><Link to="/" className="nav-link">Início</Link></li>
+                <li className="nav-item"><Link to="/Guia" className="nav-link">Funcionamento</Link></li>
+                <li className="nav-item"><Link to="/Referencias" className="nav-link">Referências</Link></li> 
+                <li className="nav-item"><Link to="/Quem" className="nav-link">Integrantes</Link></li>
+              </ul>
+            </div>
+            
+            <div className="mobile-menu-icon">
+              <button onClick={menuShow}><img className="icon" src={menuOpenIcon} alt="Menu Icon" /></button>
+            </div>
+          </nav>
+          <div className="mobile-menu">
+            <ul>
+              <li className="nav-item"><Link to="/" className="nav-link">Início</Link></li>
+              <li className="nav-item"><Link to="/Guia" className="nav-link">Funcionamento</Link></li>
+              <li className="nav-item"><Link to="/Referencias" className="nav-link">Referências</Link></li> 
+              <li className="nav-item"><Link to="/Quem" className="nav-link">Integrantes</Link></li>
+            </ul>
+          </div>
+        </header>
       </HeaderContainer>
 
       <MaisContainer>Conheça o Deep Sleep</MaisContainer>

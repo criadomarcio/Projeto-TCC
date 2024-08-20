@@ -9,11 +9,11 @@ import Motor from "../assets/Motor.jpg";
 import Fonte from "../assets/Fonte.jpg";
 import Rtc from "../assets/RTC.jpg";
 import Travesseiro from "../assets/travesseiro1.jpg";
+import menuOpenIcon from '../assets/list.svg'; 
+import closeIcon from '../assets/x.svg';
 
 import { 
-  HeaderContainer, 
-  LogoContainer, 
-  NavContainer, 
+  HeaderContainer,  
   Titulo, 
   MainContainer, 
   AtivacaoContainer, 
@@ -57,35 +57,50 @@ import {
 } from './Guia.styles';
 
 function Guia() {
+  const menuShow = () => {
+    const menuMobile = document.querySelector('.mobile-menu');
+    const icon = document.querySelector('.icon');
+    if (menuMobile.classList.contains('open')) {
+      menuMobile.classList.remove('open');
+      icon.src = menuOpenIcon;  
+    } else {
+      menuMobile.classList.add('open');
+      icon.src = closeIcon;  
+    }
+  };
+
   return (
     <>
-      <HeaderContainer>
-        <LogoContainer>
-          <img src={logoImg} alt="logo do site" />
-        </LogoContainer>
-        <NavContainer>
-          <ul>
-            <li>
-              <Link to="/">Início</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link to="/Guia">Funcionamento</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link to="/Referencias">Referências</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link to="/Quem">Integrantes</Link>
-            </li>
-          </ul>
-        </NavContainer>
+      <HeaderContainer>  
+        <header>
+          <nav className="nav-bar">
+            <div className="logo">
+              <img src={logoImg} alt="Logo da Deep Sleep" />
+            </div>
+            <div className="nav-list">
+              <ul>
+                <li className="nav-item"><Link to="/" className="nav-link">Início</Link></li>
+                <li className="nav-item"><Link to="/Guia" className="nav-link">Funcionamento</Link></li>
+                <li className="nav-item"><Link to="/Referencias" className="nav-link">Referências</Link></li> 
+                <li className="nav-item"><Link to="/Quem" className="nav-link">Integrantes</Link></li>
+              </ul>
+            </div>
+            
+            <div className="mobile-menu-icon">
+              <button onClick={menuShow}><img className="icon" src={menuOpenIcon} alt="Menu Icon" /></button>
+            </div>
+          </nav>
+          <div className="mobile-menu">
+            <ul>
+              <li className="nav-item"><Link to="/" className="nav-link">Início</Link></li>
+              <li className="nav-item"><Link to="/Guia" className="nav-link">Funcionamento</Link></li>
+              <li className="nav-item"><Link to="/Referencias" className="nav-link">Referências</Link></li> 
+              <li className="nav-item"><Link to="/Quem" className="nav-link">Integrantes</Link></li>
+            </ul>
+          </div>
+        </header>
       </HeaderContainer>
+
       <Titulo>Guia de Utilização</Titulo>
 
       <MainContainer>
