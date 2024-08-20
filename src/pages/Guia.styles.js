@@ -279,7 +279,7 @@ export const TextoH5 = styled.h4`
   font-size: 1.5rem;
   margin-bottom: 10px;
   margin-left: 12rem;
-  margin-top: 30rem;
+  margin-top: 10rem;
 `;
 
 export const TextoM5 = styled.p`
