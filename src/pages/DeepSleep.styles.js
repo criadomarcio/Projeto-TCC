@@ -286,11 +286,12 @@ export const Imagem1 = styled.div`
 export const TextH1 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   margin-left: 10rem;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
     font-size: 1.2rem;
+    margin-top: -53.5rem;
   }
 `;
 
@@ -313,12 +314,12 @@ export const TextTec1 = styled.p`
 export const TextH2 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   margin-left: 50rem;
-  margin-top: -15.7rem;
+  margin-top: -17.6rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 13rem;
   }
 `;
 
@@ -342,12 +343,12 @@ export const TextH3 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   margin-left: 90rem;
   margin-right: 5rem;
-  margin-top: -15.5rem;
+  margin-top: -19rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 23rem;
   }
 `;
 
@@ -426,13 +427,14 @@ export const ImagemP1 = styled.div`
 // Texto Público 1
 export const TextPub1 = styled.p`
   color: ${props => props.theme.textColorAzul};
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: 10rem;
   margin-right: 90rem;
   line-height: 1.5;
   font-size: 1.5rem;
 
   @media (max-width: 768px) {
+    margin-top: -48rem;
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 1rem;
@@ -445,10 +447,11 @@ export const TextPub2 = styled.p`
   margin-left: 50rem;
   margin-right: 45rem;
   font-size: 1.5rem;
-  margin-top: -4rem;
+  margin-top: -6.5rem;
   text-align: left;
 
   @media (max-width: 768px) {
+    margin-top: 24rem;
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 1rem;
@@ -464,6 +467,7 @@ export const TextPub3 = styled.p`
   margin-right: 8rem;
   text-align: left;
   @media (max-width: 768px) {
+    margin-top: 20rem;
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 1rem;

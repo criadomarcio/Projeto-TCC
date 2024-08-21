@@ -527,9 +527,16 @@ export const ImgProto = styled.img`
   width: auto;
 
   @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    flex-direction: column;
+    margin-left: 5rem;
+    gap: 10rem;
+    margin-bottom: 10rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      
+    }
   }
 `;
 
@@ -543,9 +550,16 @@ export const ImgArduino = styled.img`
   width: auto;
 
   @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    flex-direction: column;
+    margin-left: 5rem;
+    gap: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 
@@ -559,9 +573,15 @@ export const ImgDiodo = styled.img`
   width: auto;
 
   @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    flex-direction: column;
+    margin-left: 5rem;
+    gap: 10rem;
+    margin-bottom: 10rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 
@@ -575,9 +595,15 @@ export const ImgRtc = styled.img`
   width: auto;
 
   @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    flex-direction: column;
+    margin-left: 5rem;
+    gap: 10rem;
+    margin-bottom: 10rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 
@@ -591,9 +617,16 @@ export const ImgFonte = styled.img`
   width: auto;
 
   @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    flex-direction: column;
+    margin-left: 5rem;
+    gap: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 
@@ -607,9 +640,16 @@ export const ImgMotor = styled.img`
   width: auto;
 
   @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    flex-direction: column;
+    margin-left: 5rem;
+    gap: 10rem;
+    margin-bottom: 10rem;
+    margin-top: -50rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 
@@ -623,9 +663,15 @@ export const ImgCouro = styled.img`
   width: auto;
 
   @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    flex-direction: column;
+    margin-left: 5rem;
+    gap: 10rem;
+    margin-bottom: 10rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 
@@ -639,9 +685,15 @@ export const ImgDeitante = styled.img`
   width: auto;
 
   @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    flex-direction: column;
+    margin-left: 5rem;
+    gap: 10rem;
+    margin-bottom: 10rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 
