@@ -74,6 +74,7 @@ export const Txt3Container = styled.p`
   @media (max-width: 768px) {
     margin-left: 2rem;
     font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 `;
 
@@ -138,9 +139,11 @@ export const FormContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin-left: 0;
+    margin-left: 1.2rem;
     margin-top: 0;
-    max-width: 100%;
+    max-width: 90%;
+    
+
   }
 `;
 
