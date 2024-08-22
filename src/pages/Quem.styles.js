@@ -143,8 +143,8 @@ export const HumContainer1 = styled.h1`
   justify-content: center;
   padding: 5% 10%;
   color: #5D3FD3;
-  font-size: 4.5rem;
-  margin-top: 2rem;
+  font-size: 60px;
+  margin-top: 1rem;
 
   @media (max-width: 768px) {
     font-size: 3rem;

@@ -140,7 +140,7 @@ export const HeaderContainer = styled.div`
 
 
 export const Titulo = styled.h1`
-  margin: 2rem 0;
+  margin-top: 6rem;
   font-size: 60px;
   text-align: center;
   color: #5D3FD3;
@@ -397,7 +397,7 @@ export const TextoM1 = styled.p`
     margin-left: 8rem;
     margin-right: 5rem;
     font-size: 1.5rem;
-    margin-top: 0.5rem;
+    margin-top: 20rem;
   }
 `;
 
@@ -407,6 +407,12 @@ export const TextoH2 = styled.h4`
   margin-bottom: 10px;
   margin-left: 39.8rem;
   margin-top: -24.18rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8.5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+  }
 `;
 
 export const TextoM2 = styled.p`
@@ -418,6 +424,13 @@ export const TextoM2 = styled.p`
   max-width: 500px;
   line-height: 1.2;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 6rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+  }
 `;
 
 export const TextoH3 = styled.h4`
@@ -426,6 +439,12 @@ export const TextoH3 = styled.h4`
   margin-bottom: 10px;
   margin-left: 68.3rem;
   margin-top: -24.18rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8.5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+  }
 `;
 
 export const TextoM3 = styled.p`
@@ -437,6 +456,13 @@ export const TextoM3 = styled.p`
   line-height: 1.2;
   margin-left: 57.5rem;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
 `;
 
 
@@ -446,6 +472,12 @@ export const TextoH4 = styled.h4`
   margin-bottom: 10px;
   margin-left: 96rem;
   margin-top: -24.18rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8.5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+  }
 `;
 
 export const TextoM4 = styled.p`
@@ -457,6 +489,13 @@ export const TextoM4 = styled.p`
   line-height: 1.2;
   margin-left: 88rem;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
 `;
 
 export const TextoH5 = styled.h4`
@@ -465,6 +504,12 @@ export const TextoH5 = styled.h4`
   margin-bottom: 10px;
   margin-left: 12rem;
   margin-top: 10rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8.5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+  }
 `;
 
 export const TextoM5 = styled.p`
@@ -476,6 +521,13 @@ export const TextoM5 = styled.p`
   line-height: 1.2;
   margin-left: 1.5rem;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
 `;
 
 export const TextoH6 = styled.h4`
@@ -495,6 +547,13 @@ export const TextoM6 = styled.p`
   line-height: 1.2;
   margin-left: 30rem;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
 `;
 
 export const TextoH7 = styled.h4`
@@ -514,6 +573,13 @@ export const TextoM7 = styled.p`
   line-height: 1.2;
   margin-left: 58rem;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
 `;
 
 export const TextoH8 = styled.h4`
@@ -533,6 +599,13 @@ export const TextoM8 = styled.p`
   line-height: 1.2;
   margin-left: 88rem;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    
+  }
 `;
 
 // Adicione as media queries semelhantes para os outros TextContainers...

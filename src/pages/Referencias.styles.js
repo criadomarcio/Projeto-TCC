@@ -148,7 +148,8 @@ export const MainContainer = styled.main`
 
 export const TituloContainer = styled.h1`
   text-align: center;
-  margin: 4rem;
+  margin-top: 6rem;
+  font-size: 60px;
   color: #5D3FD3;
 
   @media (max-width: 768px) {

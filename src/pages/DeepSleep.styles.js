@@ -409,7 +409,7 @@ export const ImagemP1 = styled.div`
   gap: 20rem;
 
   img {
-    width: 25rem;
+    width: 20rem;
     height: 18rem;
     object-fit: cover;
     border-radius: 1.5rem;
@@ -427,63 +427,6 @@ export const ImagemP1 = styled.div`
   }
 `;
 
-export const ImagemP2 = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 5rem;
-  margin-left: 10rem;
-  width: fit-content;
-  height: auto;
-  gap: 20rem;
-
-  img {
-    width: 25rem;
-    height: 18rem;
-    object-fit: cover;
-    border-radius: 1.5rem;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 1rem;
-    gap: 10rem;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-`;
-
-export const ImagemP3 = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 5rem;
-  margin-left: 10rem;
-  width: fit-content;
-  height: auto;
-  gap: 20rem;
-
-  img {
-    width: 25rem;
-    height: 18rem;
-    object-fit: cover;
-    border-radius: 1.5rem;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 1rem;
-    gap: 10rem;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-`;
 
 // Texto Público 1
 export const TextPub1 = styled.p`
