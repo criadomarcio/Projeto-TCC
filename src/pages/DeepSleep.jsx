@@ -3,7 +3,7 @@ import React from 'react';
 import logoImg from "../assets/logo.png";
 import travesseiro from "../assets/travesseiro.png";
 import { Link } from 'react-router-dom';
-import { HeaderContainer, ImagemContainer, MaisContainer, TextContainer,NumerosContainer, Imagem1, TextTec1, TextH1, TextH2, TextTec2, TextTec3, TextH3, Tecnologia, Subtitulo, Publico, Subtitulo1, ImagemP1, TextPub1, TextPub2, TextPub3, Objetivo, TextoH1, TextoH2, TextoH3, TextOb1, TextOb2, TextOb3 } from './DeepSleep.styles';
+import { HeaderContainer, ImagemContainer, MaisContainer, TextContainer,NumerosContainer, Imagem1, TextTec1, TextH1, TextH2, TextTec2, TextTec3, TextH3, Tecnologia, Subtitulo, Publico, Subtitulo1, ImagemP1, ImagemP2, ImagemP3, TextPub1, TextPub2, TextPub3, Objetivo, TextoH1, TextoH2, TextoH3, TextOb1, TextOb2, TextOb3 } from './DeepSleep.styles';
 import Tecno1 from "../assets/tecnologia1.png";
 import Tecno2 from "../assets/tecnologia2.png";
 import Tecno3 from "../assets/tecnologia3.png";
@@ -87,7 +87,6 @@ function DeepSleep() {
         <img src={Tecno1} alt="tecnologia" />
         <img src={Tecno3} alt="tecnologia3" />
         <img src={Tecno2} alt="tecnologia2" />
-
       </Imagem1>
 
 
@@ -107,9 +106,10 @@ function DeepSleep() {
 
       <ImagemP1>
         <img src={Dorm} alt="Publico" />
-        <img src={Insonia} alt="Publico2" />
-        <img src={Men} alt="Publico3" />
       </ImagemP1>
+      {/* <ImagemP2><img src={Insonia} alt="Publico2" /></ImagemP2>
+      <ImagemP3><img src={Men} alt="Publico3" /></ImagemP3> */}
+
 
       <TextPub1>Pessoas que buscam um sono melhor e mais relaxante.</TextPub1>
 

@@ -163,6 +163,7 @@ export const TextContainer = styled.p`
   @media (max-width: 768px) {
     margin-right: 1rem;
     font-size: 1.2rem;
+    margin-left: 1rem;
   }
 `;
 
@@ -191,13 +192,14 @@ export const NumerosContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     margin-left: 1rem;
-    margin-top: 0;
+    margin-top: 1rem;
+    text-align: left;
     
     .numero-texto {
       align-items: center;
 
       div {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
 
       p {
@@ -273,12 +275,12 @@ export const Imagem1 = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    margin-left: 1rem;
+    margin-left: 0rem;
     gap: 10rem;
 
     img {
-      width: 100%;
-      height: auto;
+      width: 70%;
+      height: 70%;
     }
   }
 `;
@@ -287,7 +289,7 @@ export const Imagem1 = styled.div`
 export const TextH1 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   margin-left: 10rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -315,7 +317,7 @@ export const TextTec1 = styled.p`
 export const TextH2 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   margin-left: 50rem;
-  margin-top: -17.6rem;
+  margin-top: -14.5rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -344,7 +346,7 @@ export const TextH3 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   margin-left: 90rem;
   margin-right: 5rem;
-  margin-top: -19rem;
+  margin-top: -15.8rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -407,7 +409,7 @@ export const ImagemP1 = styled.div`
   gap: 20rem;
 
   img {
-    width: 20rem;
+    width: 25rem;
     height: 18rem;
     object-fit: cover;
     border-radius: 1.5rem;

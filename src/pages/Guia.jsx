@@ -14,7 +14,7 @@ import closeIcon from '../assets/x.svg';
 
 
 import { 
-  HeaderContainer,  
+  HeaderContainer, 
   Titulo, 
   MainContainer, 
   AtivacaoContainer, 

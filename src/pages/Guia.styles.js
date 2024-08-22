@@ -251,6 +251,7 @@ export const IntegracaoContainer = styled.div`
   @media (max-width: 768px) {
     font-size: 28px;
     padding-top: 2rem;
+    
   }
 `;
 
@@ -374,6 +375,12 @@ export const TextoH1 = styled.h4`
   margin-bottom: 10px;
   margin-left: 13.7rem;
   margin-top: 6rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8.5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+  }
 `;
 
 export const TextoM1 = styled.p`
@@ -385,6 +392,13 @@ export const TextoM1 = styled.p`
   margin-left: 1.5rem;
   line-height: 1.2;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 8rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
 `;
 
 export const TextoH2 = styled.h4`

@@ -68,6 +68,7 @@ export const SaibaContainer = styled.div`
   @media (max-width: 768px) {
     max-width: 90%;
     margin-top: 30px;
+    margin: 5rem;
   }
 `;
 
