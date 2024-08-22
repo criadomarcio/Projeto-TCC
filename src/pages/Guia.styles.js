@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// Container do Header
 export const HeaderContainer = styled.div`
   background: ${props => props.theme.header};
   padding: 1rem;
