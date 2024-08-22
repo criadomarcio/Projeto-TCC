@@ -127,6 +127,7 @@ export const HeaderContainer = styled.div`
       padding: 0;
       margin: 0;
       width: 100%;
+      margin-top: 6rem;
     }
 
     .mobile-menu .nav-item {
@@ -271,7 +272,7 @@ export const LinkContainer = styled.h5`
   }
 
   a {
-    color: ${props => props.theme.textColorLaranja};
+    color: ${props => props.theme.header};
     font-weight: bold;
     text-decoration: none; 
     cursor: pointer;

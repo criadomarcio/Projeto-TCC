@@ -229,6 +229,7 @@ export const HeaderContainer = styled.div`
       padding: 0;
       margin: 0;
       width: 100%;
+      margin-top: 6rem;
     }
 
     .mobile-menu .nav-item {

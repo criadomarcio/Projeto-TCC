@@ -127,6 +127,7 @@ export const HeaderContainer = styled.div`
       padding: 0;
       margin: 0;
       width: 100%;
+      margin-top: 6rem;
     }
 
     .mobile-menu .nav-item {
@@ -313,6 +314,12 @@ export const TextContainer4 = styled.div`
   margin-left: 9.5rem;
   margin-right: 6rem;
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+  }
 `;
 
 export const TextContainer5 = styled.div`
@@ -325,6 +332,12 @@ export const TextContainer5 = styled.div`
   margin-left: 16rem;
   margin-right: 15rem;
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+  }
 `;
 
 export const TextContainer6 = styled.div`
@@ -337,6 +350,12 @@ export const TextContainer6 = styled.div`
   margin-left: 9.5rem;
   margin-right: 6rem;
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+  }
 `;
 
 
