@@ -352,11 +352,8 @@ export const Card = styled.div`
   }
 `;
 
-
-
-
-
 export const CarouselContainer = styled.div`
+  top: 5rem;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -378,7 +375,7 @@ export const CarouselSlide = styled.div`
   align-items: center; /* Centraliza imagem e texto horizontalmente */
   position: relative; /* Permite o posicionamento absoluto do subtítulo */
   height: 100%; /* Garante que o slide ocupe toda a altura do container */
-
+  
   img {
     max-width: 100%;
     max-height: 70%; /* Ajusta a altura máxima da imagem */
@@ -397,7 +394,7 @@ export const CarouselSlide = styled.div`
     top: -6px; /* Distância do topo da imagem */
     left: 50%;
     transform: translateX(-50%);
-    color: ${props => props.theme.textColorLaranja || '#FFA500'}; /* Substitua pelo valor padrão desejado */
+    color: ${props => props.theme.textColorLaranja};
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 1.5rem; /* Tamanho da fonte do subtítulo */
@@ -418,7 +415,6 @@ export const NextButton = styled.button`
   cursor: pointer;
   z-index: 10;
   font-size: 1.5rem;
-
   &:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
@@ -437,7 +433,6 @@ export const PrevButton = styled.button`
   cursor: pointer;
   z-index: 10;
   font-size: 1.5rem;
-
   &:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
