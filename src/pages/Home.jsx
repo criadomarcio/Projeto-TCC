@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HeaderContainer, MainContainer, Title, Subtitle, Estrelas, Footer, SaibaContainer } from "./Home.styles"; 
 import logoImg from '../assets/logo.png';
 import menuOpenIcon from '../assets/list.svg'; 
@@ -6,6 +6,11 @@ import closeIcon from '../assets/x.svg';
 import { Link } from 'react-router-dom';
 
 export function Home() {
+  useEffect(() => {
+    document.body.classList.add('home-background');
+    return () => document.body.classList.remove('home-background');
+  }, []);
+  
   const menuShow = () => {
     const menuMobile = document.querySelector('.mobile-menu');
     const icon = document.querySelector('.icon');

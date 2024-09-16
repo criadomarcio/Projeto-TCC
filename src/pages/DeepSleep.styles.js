@@ -182,10 +182,12 @@ export const NumerosContainer = styled.div`
     
     div {
       font-size: 2.5rem;
+      margin-left: 11rem;
     }
 
     p {
       font-size: 1.5rem;
+      margin-left: 11rem;
     }
   }
 
@@ -212,9 +214,9 @@ export const NumerosContainer = styled.div`
 // Container de Imagens
 export const ImagemContainer = styled.div`
   img {
-    width: 60rem;
-    height: 22.5rem;
-    margin-left: 7rem; 
+    width: 90rem;
+    height: 25.5rem;
+    margin-left: 10rem; 
     border-radius: 2rem;
     margin-top: 7rem;
   }
@@ -317,7 +319,7 @@ export const TextTec1 = styled.p`
 export const TextH2 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   margin-left: 50rem;
-  margin-top: -14.5rem;
+  margin-top: -18.2rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -346,7 +348,7 @@ export const TextH3 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   margin-left: 90rem;
   margin-right: 5rem;
-  margin-top: -15.8rem;
+  margin-top: -18rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -431,7 +433,7 @@ export const ImagemP1 = styled.div`
 // Texto Público 1
 export const TextPub1 = styled.p`
   color: ${props => props.theme.textColorAzul};
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 10rem;
   margin-right: 90rem;
   line-height: 1.5;
@@ -470,6 +472,7 @@ export const TextPub3 = styled.p`
   font-size: 1.5rem;
   margin-right: 8rem;
   text-align: left;
+  
   @media (max-width: 768px) {
     margin-top: 20rem;
     margin-left: 1rem;
@@ -496,7 +499,7 @@ export const TextoH1 = styled.h4`
   color: ${props => props.theme.textColorLaranja};
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 20rem;
+  margin-left: 10rem;
   margin-top: 5rem;
 
   @media (max-width: 768px) {
@@ -511,7 +514,7 @@ export const TextOb1 = styled.p`
   font-size: 1.5rem;
   margin-bottom: 10px;
   max-width: 500px;
-  margin-left: 20rem;
+  margin-left: 10rem;
   line-height: 1.2;
   margin-top: 0.5rem;
 
@@ -526,8 +529,8 @@ export const TextoH2 = styled.h4`
   color: ${props => props.theme.textColorLaranja};
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 70rem;
-  margin-top: 5rem;
+  margin-left: 50rem;
+  margin-top: -14rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -540,10 +543,11 @@ export const TextOb2 = styled.p`
   color: ${props => props.theme.textColorAzul};
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 70rem;
+  margin-left: 50rem;
   max-width: 500px;
   line-height: 1.2;
-  margin-top: 0.5rem;
+  margin-top: 3-rem;
+  margin-right: 45rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -556,8 +560,8 @@ export const TextoH3 = styled.h4`
   color: ${props => props.theme.textColorLaranja};
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 20rem;
-  margin-top: 5rem;
+  margin-left: 90rem;
+  margin-top: -21rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -569,11 +573,12 @@ export const TextoH3 = styled.h4`
 export const TextOb3 = styled.p`
   color: ${props => props.theme.textColorAzul};
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 200px;
   max-width: 500px;
   line-height: 1.2;
-  margin-left: 20rem;
+  margin-left: 90rem;
   margin-top: 0.5rem;
+  margin-right: 5rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;

@@ -10,17 +10,16 @@ export const HeaderContainer = styled.div`
     box-shadow: 0px 3px 10px #464646; 
   }
 
-  .nav-bar img {
-    padding: 0;
-    height: 65px; 
-    width: auto;
-  }
-
   .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 0; 
     align-items: center;
+    padding: 0;
+  }
+
+  .nav-bar img {
+    height: 65px; 
+    width: auto;
   }
 
   .nav-list {
@@ -32,6 +31,8 @@ export const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   .nav-item {
@@ -61,14 +62,11 @@ export const HeaderContainer = styled.div`
   }
 
   @media screen and (max-width: 730px) {
-    background: ${props => props.theme.header};
-    margin-top: -3rem;
-
     .nav-bar {
       padding: 1.5rem 2rem;
     }
 
-    .logo{
+    .logo {
       margin-left: -2rem;
       margin-top: 2.8rem;
     }
@@ -95,7 +93,6 @@ export const HeaderContainer = styled.div`
     }
 
     .mobile-menu-icon .icon {
-      margin-top: 1.9rem;
       width: 40px;
       height: 40px;
       color: ${props => props.theme.textColorLaranja}; 
@@ -104,11 +101,11 @@ export const HeaderContainer = styled.div`
     .mobile-menu {
       position: fixed;
       top: 1rem; 
-      right: -0.1rem; 
+      right: 0; 
       width: 200px;
       background: ${props => props.theme.header}; 
       border-radius: 0.5rem;
-      display: none; 
+      display: flex; 
       align-items: center;
       padding: 1rem;
       transition: opacity 0.3s;
@@ -116,7 +113,6 @@ export const HeaderContainer = styled.div`
     }
 
     .mobile-menu.open {
-      display: flex; 
       opacity: 1; 
     }
 
@@ -137,7 +133,18 @@ export const HeaderContainer = styled.div`
   }
 `;
 
+// Títulos e Containers
+const baseTextContainerStyles = `
+  color: #6699CC;
+  font-weight: normal;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px; 
+  margin-top: 1rem;
 
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+`;
 
 export const Titulo = styled.h1`
   margin-top: 6rem;
@@ -173,6 +180,7 @@ export const Column = styled.div`
 `;
 
 export const AtivacaoContainer = styled.div`
+  ${baseTextContainerStyles}
   color: #F08080;
   margin-bottom: 2rem;
   text-align: center;
@@ -186,181 +194,53 @@ export const AtivacaoContainer = styled.div`
   }
 `;
 
-export const PersoContainer = styled.div`
-  color: #F08080;
-  margin-bottom: 2rem;
-  text-align: center;
-  padding-top: 4rem;
-  font-weight: bold;
-  font-size: 37px;
+export const PersoContainer = styled(AtivacaoContainer)``;
 
-  @media (max-width: 768px) {
-    font-size: 28px;
-    padding-top: 2rem;
-  }
-`;
+export const MonitoContainer = styled(AtivacaoContainer)``;
 
-export const MonitoContainer = styled.div`
-  color: #F08080;
-  text-align: center;
-  padding-top: 4rem;
-  font-weight: bold;
-  font-size: 37px;
-
-  @media (max-width: 768px) {
-    font-size: 28px;
-    padding-top: 2rem;
-  }
-`;
-
-export const FeedbackContainer = styled.div`
-  color: #F08080;
+export const FeedbackContainer = styled(AtivacaoContainer)`
   margin-bottom: 3rem;
-  text-align: center;
-  padding-top: 4rem;
-  font-weight: bold;
-  font-size: 37px;
-
-  @media (max-width: 768px) {
-    font-size: 28px;
-    padding-top: 2rem;
-  }
 `;
 
-export const DespertarContainer = styled.div`
-  color: #F08080;
+export const DespertarContainer = styled(AtivacaoContainer)`
   margin-bottom: 4rem;
-  text-align: center;
   padding-top: 1.8rem;
-  font-weight: bold;
-  font-size: 37px;
-
-  @media (max-width: 768px) {
-    font-size: 28px;
-    padding-top: 1rem;
-  }
 `;
 
-export const IntegracaoContainer = styled.div`
-  color: #F08080;
-  text-align: center;
-  padding-top: 4rem;
-  font-weight: bold;
-  font-size: 37px;
-
-  @media (max-width: 768px) {
-    font-size: 28px;
-    padding-top: 2rem;
-    
-  }
-`;
+export const IntegracaoContainer = styled(AtivacaoContainer)``;
 
 export const TextContainer1 = styled.div`
-  color: #6699CC;
-  font-weight: normal;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px; 
+  ${baseTextContainerStyles}
   margin-left: 16rem;
   margin-right: 15rem;
-  margin-top: 1rem;
 
   @media (max-width: 768px) {
     margin-left: 2rem;
     margin-right: 2rem;
-    font-size: 1.2rem;
   }
 `;
 
-export const TextContainer2 = styled.div`
-  color: #6699CC;
+export const TextContainer2 = styled(TextContainer1)`
   text-align: center;
-  font-weight: normal;
-  font-size: 1.5rem;
   margin-left: 7rem;
   margin-right: 5rem;
-  margin-top: 1rem;
-
-  @media (max-width: 768px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1.2rem;
-  }
 `;
 
-export const TextContainer3 = styled.div`
-  color: #6699CC;
+export const TextContainer3 = styled(TextContainer1)`
   text-align: center;
-  font-weight: normal;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px; 
   line-height: 1.4; 
   margin-left: 16rem;
   margin-right: 15rem;
-  margin-top: 1rem;
-
-  @media (max-width: 768px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1.2rem;
-  }
 `;
 
-export const TextContainer4 = styled.div`
-  color: #6699CC;
-  text-align: center;
-  font-weight: normal;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px; 
-  line-height: 1.4; 
+export const TextContainer4 = styled(TextContainer1)`
   margin-left: 9.5rem;
   margin-right: 6rem;
-  margin-top: 1rem;
-
-  @media (max-width: 768px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1.2rem;
-  }
 `;
 
-export const TextContainer5 = styled.div`
-  color: #6699CC;
-  text-align: center;
-  font-weight: normal;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px; 
-  line-height: 1.4;
-  margin-left: 16rem;
-  margin-right: 15rem;
-  margin-top: 1rem;
+export const TextContainer5 = styled(TextContainer1)``;
 
-  @media (max-width: 768px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1.2rem;
-  }
-`;
-
-export const TextContainer6 = styled.div`
-  color: #6699CC;
-  text-align: center;
-  font-weight: normal;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px; 
-  line-height: 1.4; 
-  margin-left: 9.5rem;
-  margin-right: 6rem;
-  margin-top: 1rem;
-
-  @media (max-width: 768px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1.2rem;
-  }
-`;
-
-
-
+export const TextContainer6 = styled(TextContainer4)``;
 
 export const Materiais = styled.h1`
   color: ${props => props.theme.header}; 
@@ -379,10 +259,10 @@ export const TextoH1 = styled.h4`
   @media (max-width: 768px) {
     margin-left: 8.5rem;
     margin-right: 5rem;
-    font-size: 1.5rem;
   }
 `;
 
+// Outros textos e imagens...
 export const TextoM1 = styled.p`
   color: ${props => props.theme.textColorAzul};
   text-align: center;
@@ -396,219 +276,11 @@ export const TextoM1 = styled.p`
   @media (max-width: 768px) {
     margin-left: 8rem;
     margin-right: 5rem;
-    font-size: 1.5rem;
     margin-top: 20rem;
   }
 `;
 
-export const TextoH2 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 39.8rem;
-  margin-top: -24.18rem;
-
-  @media (max-width: 768px) {
-    margin-left: 8.5rem;
-    margin-right: 5rem;
-    font-size: 1.5rem;
-  }
-`;
-
-export const TextoM2 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 30rem;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-top: 0.5rem;
-
-  @media (max-width: 768px) {
-    margin-left: 6rem;
-    margin-right: 5rem;
-    font-size: 1.5rem;
-    margin-top: 2.5rem;
-  }
-`;
-
-export const TextoH3 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 68.3rem;
-  margin-top: -24.18rem;
-
-  @media (max-width: 768px) {
-    margin-left: 8.5rem;
-    margin-right: 5rem;
-    font-size: 1.5rem;
-  }
-`;
-
-export const TextoM3 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 57.5rem;
-  margin-top: 0.5rem;
-
-  @media (max-width: 768px) {
-    margin-left: 8rem;
-    margin-right: 5rem;
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-  }
-`;
-
-
-export const TextoH4 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 96rem;
-  margin-top: -24.18rem;
-
-  @media (max-width: 768px) {
-    margin-left: 8.5rem;
-    margin-right: 5rem;
-    font-size: 1.5rem;
-  }
-`;
-
-export const TextoM4 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 88rem;
-  margin-top: 0.5rem;
-
-  @media (max-width: 768px) {
-    margin-left: 8rem;
-    margin-right: 5rem;
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-  }
-`;
-
-export const TextoH5 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 12rem;
-  margin-top: 10rem;
-
-  @media (max-width: 768px) {
-    margin-left: 8.5rem;
-    margin-right: 5rem;
-    font-size: 1.5rem;
-  }
-`;
-
-export const TextoM5 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 1.5rem;
-  margin-top: 0.5rem;
-
-  @media (max-width: 768px) {
-    margin-left: 8rem;
-    margin-right: 5rem;
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-  }
-`;
-
-export const TextoH6 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 40rem;
-  margin-top: -24.18rem;
-`;
-
-export const TextoM6 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 30rem;
-  margin-top: 0.5rem;
-
-  @media (max-width: 768px) {
-    margin-left: 8rem;
-    margin-right: 5rem;
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-  }
-`;
-
-export const TextoH7 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 65rem;
-  margin-top: -24.18rem;
-`;
-
-export const TextoM7 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 58rem;
-  margin-top: 0.5rem;
-
-  @media (max-width: 768px) {
-    margin-left: 8rem;
-    margin-right: 5rem;
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-  }
-`;
-
-export const TextoH8 = styled.h4`
-  color: ${props => props.theme.textColorLaranja};
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-left: 93rem;
-  margin-top: -24.18rem;
-`;
-
-export const TextoM8 = styled.p`
-  color: ${props => props.theme.textColorAzul};
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  line-height: 1.2;
-  margin-left: 88rem;
-  margin-top: 0.5rem;
-
-  @media (max-width: 768px) {
-    margin-right: 5rem;
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-    
-  }
-`;
-
-// Adicione as media queries semelhantes para os outros TextContainers...
+// Continue com os demais textos e imagens no mesmo estilo...
 
 export const MainContainertwo = styled.div`
   display: grid;
@@ -624,183 +296,149 @@ export const MainContainertwo = styled.div`
   }
 `;
 
-export const ImgProto = styled.img`
+const baseImgStyles = `
   height: 250px;
   border-radius: 0.7rem;
   margin-bottom: 10px;
   max-width: 500px;
-  margin-left: 10rem;
-  margin-top: 0.5rem;
   width: auto;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 5rem;
-    gap: 10rem;
-    margin-bottom: 10rem;
-
-    img {
-      width: 100%;
-      height: auto;
-      
-    }
+    width: 100%;
+    height: auto;
   }
 `;
 
-export const ImgArduino = styled.img`
-  height: 250px;
-  border-radius: 0.7rem;
+export const ImgProto = styled.img`${baseImgStyles} margin-left: 10rem; margin-top: 0.5rem;`;
+export const ImgArduino = styled.img`${baseImgStyles} margin-left: 38rem; margin-top: 0.5rem;`;
+export const ImgDiodo = styled.img`${baseImgStyles} margin-left: 65rem; margin-top: 0.5rem;`;
+export const ImgRtc = styled.img`${baseImgStyles} margin-left: 95rem; margin-top: 0.5rem;`;
+export const ImgFonte = styled.img`${baseImgStyles} margin-left: 36rem; margin-top: 0.5rem;`;
+export const ImgMotor = styled.img`${baseImgStyles} margin-left: 7rem; margin-top: 0.5rem;`;
+
+export const ImgBotao = styled.img`
+  width: 250px; 
   margin-bottom: 10px;
-  max-width: 500px;
-  margin-left: 38rem;
-  margin-top: 0.5rem;
-  width: auto;
+  height: auto;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 5rem;
-    gap: 10rem;
-    margin-bottom: 10rem;
-    margin-top: 10rem;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+    width: 100%;
   }
 `;
 
-export const ImgDiodo = styled.img`
-  height: 250px;
-  border-radius: 0.7rem;
+export const TextH1 = styled.h2`
+  color: ${props => props.theme.textColorLaranja};
+  font-size: 1.5rem;
   margin-bottom: 10px;
-  max-width: 500px;
-  margin-left: 65rem;
-  margin-top: 0.5rem;
-  width: auto;
+  text-align: center;
+  margin-left: 13.7rem;
+  margin-top: 1rem;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 5rem;
-    gap: 10rem;
-    margin-bottom: 10rem;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+    margin-left: 2rem;
   }
 `;
 
-export const ImgRtc = styled.img`
-  height: 250px;
-  border-radius: 0.7rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  margin-left: 95rem;
-  margin-top: 0.5rem;
-  width: auto;
+export const Card = styled.div`
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 5rem;
-    gap: 10rem;
-    margin-bottom: 10rem;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+    padding: 0.5rem;
+    margin: 0.5rem;
   }
 `;
 
-export const ImgFonte = styled.img`
-  height: 250px;
-  border-radius: 0.7rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  margin-left: 36rem;
-  margin-top: 0.5rem;
-  width: auto;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 5rem;
-    gap: 10rem;
-    margin-bottom: 10rem;
-    margin-top: 10rem;
 
-    img {
-      width: 100%;
-      height: auto;
-    }
+
+
+export const CarouselContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px; /* Ajuste a altura do carrossel conforme necessário */
+`;
+
+export const CarouselWrapper = styled.div`
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+`;
+
+export const CarouselSlide = styled.div`
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Organiza imagem e texto em coluna */
+  justify-content: center; /* Centraliza imagem e texto verticalmente */
+  align-items: center; /* Centraliza imagem e texto horizontalmente */
+  position: relative; /* Permite o posicionamento absoluto do subtítulo */
+  height: 100%; /* Garante que o slide ocupe toda a altura do container */
+
+  img {
+    max-width: 100%;
+    max-height: 70%; /* Ajusta a altura máxima da imagem */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+  }
+
+  .text {
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+    font-size: 1rem; /* Tamanho da fonte do texto */
+    color: #333; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .subtitle {
+    position: absolute;
+    top: -6px; /* Distância do topo da imagem */
+    left: 50%;
+    transform: translateX(-50%);
+    color: ${props => props.theme.textColorLaranja || '#FFA500'}; /* Substitua pelo valor padrão desejado */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5rem; /* Tamanho da fonte do subtítulo */
+    text-align: center; /* Centraliza o subtítulo horizontalmente */
   }
 `;
 
-export const ImgMotor = styled.img`
-  height: 250px;
-  border-radius: 0.7rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  margin-left: 7rem;
-  margin-top: 0.5rem;
-  width: auto;
+export const NextButton = styled.button`
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.5rem;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 5rem;
-    gap: 10rem;
-    margin-bottom: 10rem;
-    margin-top: -50rem;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 `;
 
-export const ImgCouro = styled.img`
-  height: 250px;
-  border-radius: 0.7rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  margin-left: 95rem;
-  margin-top: 0.5rem;
-  width: auto;
+export const PrevButton = styled.button`
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.5rem;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 5rem;
-    gap: 10rem;
-    margin-bottom: 10rem;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 `;
-
-export const ImgDeitante = styled.img`
-  height: 250px;
-  border-radius: 0.7rem;
-  margin-bottom: 10px;
-  max-width: 500px;
-  margin-left: 65rem;
-  margin-top: 0.5rem;
-  width: auto;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 5rem;
-    gap: 10rem;
-    margin-bottom: 10rem;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-`;
-

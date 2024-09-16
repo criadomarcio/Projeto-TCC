@@ -1,7 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
+
+
 import { Home } from "./pages/Home";
+import { Helmet } from 'react-helmet';
 import { theme } from "./styles/theme.js";
 import { GlobalStyle } from "./styles/global.js";
 import Guia from "./pages/Guia.jsx"; // Importa o componente Guia
@@ -44,6 +47,7 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
+
   return (
     <ThemeProvider theme={theme}>
       <RouterProvider router={router} />
