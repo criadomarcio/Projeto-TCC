@@ -29,7 +29,7 @@ function Referencias() {
             <div className="nav-list">
               <ul>
                 <li className="nav-item"><Link to="/" className="nav-link">Início</Link></li>
-                <li className="nav-item"><Link to="/Guia" className="nav-link">Funcionamento</Link></li>
+                <li className="nav-item"><Link to="/Guia" className="nav-link">Guia</Link></li>
                 <li className="nav-item"><Link to="/Referencias" className="nav-link">Referências</Link></li> 
                 <li className="nav-item"><Link to="/Quem" className="nav-link">Integrantes</Link></li>
               </ul>
@@ -42,7 +42,7 @@ function Referencias() {
           <div className="mobile-menu">
             <ul>
               <li className="nav-item"><Link to="/" className="nav-link">Início</Link></li>
-              <li className="nav-item"><Link to="/Guia" className="nav-link">Funcionamento</Link></li>
+              <li className="nav-item"><Link to="/Guia" className="nav-link">Guia</Link></li>
               <li className="nav-item"><Link to="/Referencias" className="nav-link">Referências</Link></li> 
               <li className="nav-item"><Link to="/Quem" className="nav-link">Integrantes</Link></li>
             </ul>

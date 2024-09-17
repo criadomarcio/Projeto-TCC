@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Para redirecionar
 import {
   EntContainer, SubtitleContainer, TxtContainer, Txt2Container, Sub2titleContainer, Txt3Container, 
   FormContainer, FormGroup, FormLabel, FormInput, FormTextArea, SubmitButton, 
-  Contato
+  Contato, PopupContainer // Adiciona PopupContainer para estilizar o popup
 } from './Feedback.style'; // Ajuste o caminho se necessário
 
-import whats from "../assets/whatsapp-logo.svg"
-import insta from "../assets/instagram.svg"
-import ttk from "../assets/tiktok.svg"
+import whats from "../assets/whatsapp-logo.svg";
+import insta from "../assets/instagram.svg";
+import ttk from "../assets/tiktok.svg";
 
 // Componente FeedbackPage
 const FeedbackPage = ({ children }) => {
@@ -16,28 +17,25 @@ const FeedbackPage = ({ children }) => {
 
 // Componente Feedback
 const Feedback = () => {
-  // Estado para gerenciar os dados do formulário
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
   
-  // Estado para mensagens de feedback ao usuário
   const [feedbackMessage, setFeedbackMessage] = useState('');
-  
-  // Função para lidar com a mudança nos campos do formulário
+  const [showPopup, setShowPopup] = useState(false); // Estado para controlar o popup
+  const navigate = useNavigate(); // Para redirecionar
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
   
-  // Função para lidar com a submissão do formulário
   const handleSubmit = async (e) => {
     e.preventDefault();
     
     try {
-      // Exemplo de chamada para um backend local (ajuste o URL conforme necessário)
       const response = await fetch('http://localhost:3000/feedback', {
         method: 'POST',
         headers: {
@@ -48,7 +46,14 @@ const Feedback = () => {
 
       if (response.ok) {
         setFeedbackMessage('Feedback enviado com sucesso!');
-        setFormData({ name: '', email: '', message: '' }); // Limpa o formulário após o envio
+        setFormData({ name: '', email: '', message: '' }); // Limpa o formulário
+        setShowPopup(true); // Mostra o popup
+
+        // Após 3 segundos, oculta o popup e redireciona para a página inicial
+        setTimeout(() => {
+          setShowPopup(false);
+          navigate('/'); // Redireciona para a página inicial
+        }, 3000);
       } else {
         setFeedbackMessage('Erro ao enviar feedback.');
       }
@@ -133,6 +138,13 @@ const Feedback = () => {
             <img src={ttk} className="ttk" alt="tiktok" />
           </div>
         </Contato>
+
+        {/* Popup de agradecimento */}
+        {showPopup && (
+          <PopupContainer>
+            <p>Obrigado pelo seu feedback!</p>
+          </PopupContainer>
+        )}
       </div>
     </>
   );

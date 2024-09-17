@@ -1,5 +1,3 @@
-
-
 import styled from "styled-components";
 
 // Container do Header
@@ -63,80 +61,81 @@ export const HeaderContainer = styled.div`
   }
 
   @media screen and (max-width: 730px) {
-    background: ${props => props.theme.header};
-    margin-top: -3rem;
+  background: ${props => props.theme.header};
+  margin-top: -3rem;
 
-    .nav-bar {
-      padding: 1.5rem 2rem;
-    }
-
-    .logo{
-      margin-left: -2rem;
-      margin-top: 2.8rem;
-    }
-
-    .nav-item {
-      display: none;
-    }
-
-    .mobile-menu-icon {
-      display: block;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      padding: 0.5rem;
-      border-radius: 0.5rem;
-      background-color: ${props => props.theme.header}; 
-      z-index: 1000;
-    }
-
-    .mobile-menu-icon button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-    }
-
-    .mobile-menu-icon .icon {
-      margin-top: 1.9rem;
-      width: 40px;
-      height: 40px;
-      color: ${props => props.theme.textColorLaranja}; 
-    }
-
-    .mobile-menu {
-      position: fixed;
-      top: 1rem; 
-      right: 3rem; 
-      width: 200px;
-      background: ${props => props.theme.header}; 
-      border-radius: 0.5rem;
-      display: none; 
-      align-items: center;
-      padding: 1rem;
-      transition: opacity 0.3s;
-      opacity: 0; 
-    }
-
-    .mobile-menu.open {
-      display: flex; 
-      opacity: 1; 
-    }
-
-    .mobile-menu ul {
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      margin-top: 6rem;
-    }
-
-    .mobile-menu .nav-item {
-      display: block;
-      padding: 1rem;
-    }
+  .nav-bar {
+    padding: 1.5rem 2rem;
   }
+
+  .logo {
+    margin-left: -2rem;
+    margin-top: 2.8rem;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: ${props => props.theme.header}; 
+    z-index: 1000;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu-icon .icon {
+    margin-top: 1.9rem;
+    width: 40px;
+    height: 40px;
+    color: ${props => props.theme.textColorLaranja}; 
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 1rem; 
+    right: 3rem; 
+    width: 200px;
+    background: ${props => props.theme.header}; 
+    border-radius: 0.5rem;
+    display: none; 
+    align-items: center;
+    padding: 1rem;
+    transition: opacity 0.3s;
+    opacity: 0; 
+  }
+
+  .mobile-menu.open {
+    display: flex; 
+    opacity: 1; 
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 6rem;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding: 1rem;
+  }
+}
+
 `;
 
 // Container Mais
@@ -249,7 +248,7 @@ export const Tecnologia = styled.h1`
     font-size: 2.5rem;
     margin-right:3rem ;
     text-align: left;
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
 `;
 
@@ -262,9 +261,9 @@ export const Subtitulo = styled.p`
   text-align: center;
 
   @media (max-width: 768px) {
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: left;
   }
 `;
@@ -338,7 +337,7 @@ export const TextH2 = styled.h5`
 
   @media (max-width: 768px) {
     margin-left: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 13rem;
     text-align: center;
   }
@@ -402,7 +401,7 @@ export const Publico = styled.h1`
     margin-top: 8rem;
     font-size: 2.5rem;
     text-align: left;
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
 `;
 
@@ -415,9 +414,9 @@ export const Subtitulo1 = styled.p`
   margin-right: 33rem;
 
   @media (max-width: 768px) {
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-right: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: left;
   }
 `;
@@ -577,7 +576,7 @@ export const TextOb2 = styled.p`
   margin-left: 50rem;
   max-width: 500px;
   line-height: 1.2;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   margin-right: 45rem;
 
   @media (max-width: 768px) {

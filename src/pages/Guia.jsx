@@ -98,7 +98,7 @@ function Guia() {
             <div className="nav-list">
               <ul>
                 <li className="nav-item"><Link to="/" className="nav-link">Início</Link></li>
-                <li className="nav-item"><Link to="/Guia" className="nav-link">Funcionamento</Link></li>
+                <li className="nav-item"><Link to="/Guia" className="nav-link">Guia</Link></li>
                 <li className="nav-item"><Link to="/Referencias" className="nav-link">Referências</Link></li>
                 <li className="nav-item"><Link to="/Quem" className="nav-link">Integrantes</Link></li>
               </ul>
@@ -112,7 +112,7 @@ function Guia() {
           <div className="mobile-menu" ref={menuRef}>
             <ul>
               <li className="nav-item"><Link to="/" className="nav-link">Início</Link></li>
-              <li className="nav-item"><Link to="/Guia" className="nav-link">Funcionamento</Link></li>
+              <li className="nav-item"><Link to="/Guia" className="nav-link">Guia</Link></li>
               <li className="nav-item"><Link to="/Referencias" className="nav-link">Referências</Link></li>
               <li className="nav-item"><Link to="/Quem" className="nav-link">Integrantes</Link></li>
             </ul>
@@ -120,7 +120,7 @@ function Guia() {
         </header>
       </HeaderContainer>
 
-      <Titulo>Funcionamento</Titulo>
+      <Titulo>Guia de utilização</Titulo>
 
       <MainContainer>
         <Column>
@@ -146,7 +146,7 @@ function Guia() {
           </MonitoContainer>
         </Column>
 
-        <Column>
+        <Column className="2">
           <FeedbackContainer>
             <p>Feedback Tátil</p>
             <TextContainer2>
