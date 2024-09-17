@@ -370,7 +370,7 @@ export const TextH3 = styled.h5`
     margin-left: 0;
     margin-right: -1rem;
     font-size: 1.2rem;
-    margin-top: 19.5rem;
+    margin-top: 22rem;
     text-align: center;
   }
 `;
