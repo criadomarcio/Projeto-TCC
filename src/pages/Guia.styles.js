@@ -10,16 +10,17 @@ export const HeaderContainer = styled.div`
     box-shadow: 0px 3px 10px #464646; 
   }
 
+  .nav-bar img {
+    padding: 0;
+    height: 65px; 
+    width: auto;
+  }
+
   .nav-bar {
     display: flex;
     justify-content: space-between;
+    padding: 0; 
     align-items: center;
-    padding: 0;
-  }
-
-  .nav-bar img {
-    height: 65px; 
-    width: auto;
   }
 
   .nav-list {
@@ -31,8 +32,6 @@ export const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;
-    margin: 0;
   }
 
   .nav-item {
@@ -62,11 +61,14 @@ export const HeaderContainer = styled.div`
   }
 
   @media screen and (max-width: 730px) {
+    background: ${props => props.theme.header};
+    margin-top: -3rem;
+
     .nav-bar {
       padding: 1.5rem 2rem;
     }
 
-    .logo {
+    .logo{
       margin-left: -2rem;
       margin-top: 2.8rem;
     }
@@ -93,6 +95,7 @@ export const HeaderContainer = styled.div`
     }
 
     .mobile-menu-icon .icon {
+      margin-top: 1.9rem;
       width: 40px;
       height: 40px;
       color: ${props => props.theme.textColorLaranja}; 
@@ -101,11 +104,11 @@ export const HeaderContainer = styled.div`
     .mobile-menu {
       position: fixed;
       top: 1rem; 
-      right: 0; 
+      right: 3rem; 
       width: 200px;
       background: ${props => props.theme.header}; 
       border-radius: 0.5rem;
-      display: flex; 
+      display: none; 
       align-items: center;
       padding: 1rem;
       transition: opacity 0.3s;
@@ -113,6 +116,7 @@ export const HeaderContainer = styled.div`
     }
 
     .mobile-menu.open {
+      display: flex; 
       opacity: 1; 
     }
 
@@ -134,18 +138,6 @@ export const HeaderContainer = styled.div`
 `;
 
 // Títulos e Containers
-const baseTextContainerStyles = `
-  color: #6699CC;
-  font-weight: normal;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px; 
-  margin-top: 1rem;
-
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
-  }
-`;
-
 export const Titulo = styled.h1`
   margin-top: 6rem;
   font-size: 60px;
@@ -154,7 +146,8 @@ export const Titulo = styled.h1`
   font-weight: bold;
 
   @media (max-width: 768px) {
-    font-size: 40px;
+    font-size: 36px; /* Tamanho mais legível para mobile */
+    margin-top: 4rem; /* Reduz o espaço superior em telas menores */
   }
 `;
 
@@ -165,7 +158,8 @@ export const MainContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0 1rem; /* Reduz o padding lateral no mobile */
+    gap: 1rem; /* Adiciona espaçamento entre os itens */
   }
 `;
 
@@ -175,7 +169,7 @@ export const Column = styled.div`
 
   @media (max-width: 768px) {
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Espaçamento entre as colunas */
   }
 `;
 
@@ -191,23 +185,40 @@ export const AtivacaoContainer = styled.div`
   @media (max-width: 768px) {
     font-size: 28px;
     padding-top: 2rem;
+    margin-bottom: 1.5rem; /* Reduz o espaço inferior no mobile */
   }
 `;
 
-export const PersoContainer = styled(AtivacaoContainer)``;
+export const PersoContainer = styled(AtivacaoContainer)`
+  /* Sem mudanças, herda os estilos do AtivacaoContainer */
+`;
 
-export const MonitoContainer = styled(AtivacaoContainer)``;
+export const MonitoContainer = styled(AtivacaoContainer)`
+  /* Sem mudanças, herda os estilos do AtivacaoContainer */
+`;
 
 export const FeedbackContainer = styled(AtivacaoContainer)`
   margin-bottom: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem; /* Alinha o espaçamento com outros containers no mobile */
+  }
 `;
 
 export const DespertarContainer = styled(AtivacaoContainer)`
   margin-bottom: 4rem;
   padding-top: 1.8rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 2rem; /* Reduz o espaço para evitar muito espaço no mobile */
+  }
 `;
 
-export const IntegracaoContainer = styled(AtivacaoContainer)``;
+export const IntegracaoContainer = styled(AtivacaoContainer)`
+  /* Sem mudanças, herda os estilos do AtivacaoContainer */
+`;
 
 export const TextContainer1 = styled.div`
   ${baseTextContainerStyles}
@@ -215,33 +226,55 @@ export const TextContainer1 = styled.div`
   margin-right: 15rem;
 
   @media (max-width: 768px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem; /* Margens mais compactas no mobile */
+    margin-right: 1rem;
+    text-align: center; /* Centraliza o texto para melhor alinhamento no mobile */
   }
 `;
 
 export const TextContainer2 = styled(TextContainer1)`
-  text-align: center;
   margin-left: 7rem;
   margin-right: 5rem;
+
+  @media (max-width: 768px) {
+    margin-left: 1rem; /* Ajuste para centralizar no mobile */
+    margin-right: 1rem;
+  }
 `;
 
-export const TextContainer3 = styled(TextContainer1)`
-  text-align: center;
-  line-height: 1.4; 
+export const TextContainer3 = styled`
+  line-height: 1.4;
   margin-left: 16rem;
   margin-right: 15rem;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const TextContainer4 = styled(TextContainer1)`
   margin-left: 9.5rem;
   margin-right: 6rem;
+
+  @media (max-width: 768px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 `;
 
-export const TextContainer5 = styled(TextContainer1)``;
+export const TextContainer5 = styled(TextContainer1)`
+  text-align: center;
+  margin-right: 0;
+  margin-left: 0;
 
-export const TextContainer6 = styled(TextContainer4)``;
+  @media (max-width: 768px) {
+    margin: 0; /* Remove margem no mobile */
+  }
+`;
 
+export const TextContainer6 = styled(TextContainer4)`
+  /* Sem mudanças, herda os estilos do TextContainer4 */
+`;
 export const Materiais = styled.h1`
   color: ${props => props.theme.header}; 
   text-align: center;
@@ -353,7 +386,7 @@ export const Card = styled.div`
 `;
 
 export const CarouselContainer = styled.div`
-  top: 5rem;
+  top: 10rem;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -385,8 +418,10 @@ export const CarouselSlide = styled.div`
   .text {
     margin-top: 10px; /* Espaço entre a imagem e o texto */
     font-size: 1rem; /* Tamanho da fonte do texto */
-    color: #333; /* Cor do texto */
+    color: ${props => props.theme.textColorAzul}; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
+    margin-right: 50rem;
+    margin-left: 50rem;
   }
 
   .subtitle {
@@ -404,11 +439,11 @@ export const CarouselSlide = styled.div`
 
 export const NextButton = styled.button`
   position: absolute;
-  top: 50%;
-  right: 10px;
+  top: 35%;
+  right: 500px;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: ${props => props.theme.pagesBackground};
+  color: ${props => props.theme.textColorLaranja};
   border: none;
   padding: 10px;
   border-radius: 50%;
@@ -416,17 +451,17 @@ export const NextButton = styled.button`
   z-index: 10;
   font-size: 1.5rem;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: ${props => props.theme.pagesBackground};
   }
 `;
 
 export const PrevButton = styled.button`
   position: absolute;
-  top: 50%;
-  left: 10px;
+  top: 35%;
+  left: 500px;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: ${props => props.theme.pagesBackground};
+  color: ${props => props.theme.textColorLaranja};
   border: none;
   padding: 10px;
   border-radius: 50%;
@@ -434,6 +469,6 @@ export const PrevButton = styled.button`
   z-index: 10;
   font-size: 1.5rem;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: ${props => props.theme.pagesBackground};
   }
 `;

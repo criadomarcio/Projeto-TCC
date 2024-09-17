@@ -86,7 +86,8 @@ export const Estrelas = styled.div`
 
   @media (max-width: 768px) {
     span {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
+      margin-top: -6rem;
     }
   }
 `;
@@ -100,6 +101,7 @@ export const Footer = styled.footer`
   @media (max-width: 768px) {
     font-size: 1.2rem;
     text-align: center;
+    margin-top: -1rem;
   }
 `;
 

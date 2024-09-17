@@ -26,6 +26,10 @@ export const GlobalStyle = createGlobalStyle`
     .home-background {
         background: ${props => props.theme.homeBackground};
     }
+
+    .feedback {
+        background: ${props => props.theme.homeBackground};
+    }
 `;
 
 

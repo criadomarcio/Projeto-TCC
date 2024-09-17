@@ -102,8 +102,8 @@ export const FormTextArea = styled.textarea`
 `;
 
 export const SubmitButton = styled.button`
-  background-color: #5D3FD3;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #5D3FD3;
   padding: 0.75rem;
   border: none;
   border-radius: 4px;
@@ -112,8 +112,8 @@ export const SubmitButton = styled.button`
   transition: background-color 0.3s, color 0.3s;
   border: 1px solid #5D3FD3;
   &:hover {
-    background-color: #FFFFFF;
-    color: #5D3FD3; 
+    background-color: #5D3FD3;
+    color: #FFFFFF; 
   }
 `;
 

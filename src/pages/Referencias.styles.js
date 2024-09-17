@@ -154,7 +154,9 @@ export const TituloContainer = styled.h1`
 
   @media (max-width: 768px) {
     margin: 2rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 3rem;
   }
 `;
 
@@ -169,7 +171,7 @@ export const ImporContainer = styled.h2`
   @media (max-width: 768px) {
     margin-left: 0;
     font-size: 1.2rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
 `;
 
@@ -219,6 +221,7 @@ export const Text2Container = styled.p`
     margin-left: 0;
     font-size: 1.2rem;
     max-width: 100%;
+    margin-right: 0;
   }
 `;
 
@@ -250,5 +253,6 @@ export const Text3Container = styled.p`
     margin-left: 0;
     font-size: 1.2rem;
     max-width: 100%;
+    margin-right: 0;
   }
 `;

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logoImg from '../assets/logo.png';
 import Ard from "../assets/arduino.jpg";
@@ -77,6 +77,15 @@ function Guia() {
       }
     }
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000); // 3000 ms = 3 segundos
+
+    // Limpar o intervalo quando o componente for desmontado
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
     <>

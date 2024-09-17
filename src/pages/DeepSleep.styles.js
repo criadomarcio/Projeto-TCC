@@ -106,7 +106,7 @@ export const HeaderContainer = styled.div`
     .mobile-menu {
       position: fixed;
       top: 1rem; 
-      right: -0.1rem; 
+      right: 3rem; 
       width: 200px;
       background: ${props => props.theme.header}; 
       border-radius: 0.5rem;
@@ -147,8 +147,9 @@ export const MaisContainer = styled.h1`
   font-size: 5rem;
 
   @media (max-width: 768px) {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-left: 1rem;
+    margin-right: 5rem;
   }
 `;
 
@@ -161,8 +162,8 @@ export const TextContainer = styled.p`
   font-size: 1.8rem;
 
   @media (max-width: 768px) {
-    margin-right: 1rem;
-    font-size: 1.2rem;
+    margin-right: 4rem;
+    font-size: 1rem;
     margin-left: 1rem;
   }
 `;
@@ -189,6 +190,7 @@ export const NumerosContainer = styled.div`
       font-size: 1.5rem;
       margin-left: 11rem;
     }
+    
   }
 
   @media (max-width: 768px) {
@@ -198,15 +200,20 @@ export const NumerosContainer = styled.div`
     text-align: left;
     
     .numero-texto {
-      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: -11rem;
+      align-items: flex-start; /* Alinha à esquerda */
+      margin-bottom: -2rem; /* Espaçamento entre os itens */
+    }
 
-      div {
-        font-size: 1.8rem;
-      }
+    .numero-texto div {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem; /* Espaço entre o número e o texto */
+    }
 
-      p {
-        font-size: 1rem;
-      }
+    .numero-texto p {
+      font-size: 1rem;
     }
   }
 `;
@@ -214,21 +221,22 @@ export const NumerosContainer = styled.div`
 // Container de Imagens
 export const ImagemContainer = styled.div`
   img {
-    width: 90rem;
-    height: 25.5rem;
-    margin-left: 10rem; 
+    width: 90rem; /* Aumentado para um tamanho maior */
+    height: 25.5rem; /* Manter a proporção da imagem */
+    margin-left: 10rem;
     border-radius: 2rem;
     margin-top: 7rem;
   }
 
   @media (max-width: 768px) {
     img {
-      width: 100%;
+      width: 90%;
       height: auto;
-      margin-left: 0;
+      margin-left: 1.1rem;
     }
   }
 `;
+
 
 // Container Tecnologia
 export const Tecnologia = styled.h1`
@@ -239,6 +247,9 @@ export const Tecnologia = styled.h1`
   @media (max-width: 768px) {
     margin-top: 8rem;
     font-size: 2.5rem;
+    margin-right:3rem ;
+    text-align: left;
+    margin-left: 3rem;
   }
 `;
 
@@ -251,9 +262,10 @@ export const Subtitulo = styled.p`
   text-align: center;
 
   @media (max-width: 768px) {
-    margin-left: 1rem;
+    margin-left: 3rem;
     margin-right: 1rem;
     font-size: 1.2rem;
+    text-align: left;
   }
 `;
 
@@ -278,7 +290,7 @@ export const Imagem1 = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     margin-left: 0rem;
-    gap: 10rem;
+    gap: 15rem; /* Aumenta o espaçamento entre as imagens */
 
     img {
       width: 70%;
@@ -296,7 +308,8 @@ export const TextH1 = styled.h5`
   @media (max-width: 768px) {
     margin-left: 1rem;
     font-size: 1.2rem;
-    margin-top: -53.5rem;
+    margin-top: -54.5rem;
+    text-align: center;
   }
 `;
 
@@ -312,6 +325,8 @@ export const TextTec1 = styled.p`
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 1rem;
+    text-align: center;
+    
   }
 `;
 
@@ -325,6 +340,7 @@ export const TextH2 = styled.h5`
     margin-left: 1rem;
     font-size: 1.2rem;
     margin-top: 13rem;
+    text-align: center;
   }
 `;
 
@@ -340,6 +356,7 @@ export const TextTec2 = styled.p`
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 1rem;
+    text-align: center;
   }
 `;
 
@@ -351,9 +368,11 @@ export const TextH3 = styled.h5`
   margin-top: -18rem;
 
   @media (max-width: 768px) {
-    margin-left: 1rem;
+    margin-left: 0;
+    margin-right: -1rem;
     font-size: 1.2rem;
-    margin-top: 23rem;
+    margin-top: 19.5rem;
+    text-align: center;
   }
 `;
 
@@ -369,6 +388,7 @@ export const TextTec3 = styled.p`
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 1rem;
+    text-align: center;
   }
 `;
 
@@ -381,6 +401,8 @@ export const Publico = styled.h1`
   @media (max-width: 768px) {
     margin-top: 8rem;
     font-size: 2.5rem;
+    text-align: left;
+    margin-left: 3rem;
   }
 `;
 
@@ -393,9 +415,10 @@ export const Subtitulo1 = styled.p`
   margin-right: 33rem;
 
   @media (max-width: 768px) {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 3rem;
+    margin-right: 0.5rem;
     font-size: 1.2rem;
+    text-align: left;
   }
 `;
 
@@ -423,8 +446,9 @@ export const ImagemP1 = styled.div`
     gap: 10rem;
 
     img {
-      width: 100%;
+      width: 90%;
       height: auto;
+      margin-left: -1.1rem;
     }
   }
 `;
@@ -440,8 +464,8 @@ export const TextPub1 = styled.p`
   font-size: 1.5rem;
 
   @media (max-width: 768px) {
-    margin-top: -48rem;
-    margin-left: 1rem;
+    margin-top: -45.5rem;
+    margin-left: 2rem;
     margin-right: 1rem;
     font-size: 1rem;
   }
@@ -457,8 +481,8 @@ export const TextPub2 = styled.p`
   text-align: left;
 
   @media (max-width: 768px) {
-    margin-top: 24rem;
-    margin-left: 1rem;
+    margin-top: 22rem;
+    margin-left: 2rem;
     margin-right: 1rem;
     font-size: 1rem;
   }
@@ -474,8 +498,8 @@ export const TextPub3 = styled.p`
   text-align: left;
   
   @media (max-width: 768px) {
-    margin-top: 20rem;
-    margin-left: 1rem;
+    margin-top: 19rem;
+    margin-left: 2rem;
     margin-right: 1rem;
     font-size: 1rem;
   }
@@ -491,6 +515,8 @@ export const Objetivo = styled.h1`
   @media (max-width: 768px) {
     margin-top: 8rem;
     font-size: 2.5rem;
+    margin-left: 3rem;
+    text-align: left;
   }
 `;
 
@@ -505,9 +531,11 @@ export const TextoH1 = styled.h4`
   @media (max-width: 768px) {
     margin-left: 1rem;
     font-size: 1.2rem;
+    margin-top: 2rem;
   }
 `;
 
+// Texto Objetivo 1
 // Texto Objetivo 1
 export const TextOb1 = styled.p`
   color: ${props => props.theme.textColorAzul};
@@ -520,7 +548,8 @@ export const TextOb1 = styled.p`
 
   @media (max-width: 768px) {
     margin-left: 1rem;
-    font-size: 1rem;
+    margin-right: 1rem; /* Ajusta a margem direita também para centralizar o conteúdo */
+    font-size: 1.1rem;  /* Font-size um pouco maior para melhorar a legibilidade */
   }
 `;
 
@@ -534,7 +563,9 @@ export const TextoH2 = styled.h4`
 
   @media (max-width: 768px) {
     margin-left: 1rem;
-    font-size: 1.2rem;
+    margin-right: 1rem; /* Adiciona margem direita para centralizar melhor */
+    font-size: 1.3rem;  /* Ajuste sutil no tamanho da fonte */
+    margin-top: 2rem;  /* Reduz a margem superior para melhorar o espaçamento */
   }
 `;
 
@@ -546,12 +577,14 @@ export const TextOb2 = styled.p`
   margin-left: 50rem;
   max-width: 500px;
   line-height: 1.2;
-  margin-top: 3-rem;
+  margin-top: 3rem;
   margin-right: 45rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
-    font-size: 1rem;
+    margin-right: 1rem; /* Mantém a consistência na centralização */
+    font-size: 1.1rem; /* Ajuste leve para manter a legibilidade */
+    margin-top: 1rem; /* Ajuste a margem superior para manter o espaçamento adequado */
   }
 `;
 
@@ -565,7 +598,9 @@ export const TextoH3 = styled.h4`
 
   @media (max-width: 768px) {
     margin-left: 1rem;
-    font-size: 1.2rem;
+    margin-right: 1rem; /* Ajusta para melhor centralização */
+    font-size: 1.3rem; /* Aumenta um pouco o tamanho para manter o destaque */
+    margin-top: 2rem; /* Ajuste na margem superior */
   }
 `;
 
@@ -582,8 +617,9 @@ export const TextOb3 = styled.p`
 
   @media (max-width: 768px) {
     margin-left: 1rem;
-    font-size: 1rem;
+    margin-right: 1rem;
+    font-size: 1.1rem; /* Ajuste de fonte */
+    margin-top: 1rem;  /* Aumenta o espaçamento superior para evitar colapsos */
+    margin-bottom: 50px; /* Reduz o margin-bottom para melhor espaçamento em telas menores */
   }
 `;
-
-
