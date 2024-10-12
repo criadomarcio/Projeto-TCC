@@ -142,7 +142,7 @@ export const MainContainer = styled.main`
   padding: 20px;
 
   @media (max-width: 768px) {
-    padding: 10px;
+    padding: 20px;
   }
 `;
 

@@ -174,13 +174,14 @@ function Guia() {
 
       <CarouselContainer>
         <CarouselWrapper style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-          {images.map((image, index) => (
-            <CarouselSlide key={index}>
-              <img src={image.src} alt={image.alt} />
-              <div className="subtitle">{image.subtitle}</div> {/* Subtítulo sobre a imagem */}
-              <div className="text">{image.alt}</div> {/* Texto abaixo da imagem */}
-            </CarouselSlide>
-          ))}
+        {images.map((image, index) => (
+          <CarouselSlide key={index}>
+            <img src={image.src} alt={image.alt} />
+            <div className="subtitle">{image.subtitle}</div> {/* Subtítulo separado da imagem */}
+            <div className="text">{image.alt}</div> {/* Texto descritivo da imagem */}
+            
+          </CarouselSlide>
+        ))}
         </CarouselWrapper>
         <PrevButton onClick={handlePrev} aria-label="Slide anterior">❮</PrevButton>
         <NextButton onClick={handleNext} aria-label="Próximo slide">❯</NextButton>
