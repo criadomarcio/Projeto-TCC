@@ -104,7 +104,7 @@ export const HeaderContainer = styled.div`
   .mobile-menu {
     position: fixed;
     top: 1rem; 
-    right: 3rem; 
+    right: 0rem; 
     width: 200px;
     background: ${props => props.theme.header}; 
     border-radius: 0.5rem;
@@ -305,9 +305,9 @@ export const TextH1 = styled.h5`
   margin-top: 1rem;
 
   @media (max-width: 768px) {
-    margin-left: 1rem;
+    margin-left: 0.2rem;
     font-size: 1.2rem;
-    margin-top: -54.5rem;
+    margin-top: -54rem;
     text-align: center;
   }
 `;
@@ -318,7 +318,7 @@ export const TextTec1 = styled.p`
   margin-top: 1rem;
   margin-left: 10rem;
   margin-right: 89.3rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -333,12 +333,12 @@ export const TextTec1 = styled.p`
 export const TextH2 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   margin-left: 50rem;
-  margin-top: -18.2rem;
+  margin-top: -16.2rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
-    font-size: 1rem;
-    margin-top: 13rem;
+    font-size: 1.2rem;
+    margin-top: 12.5rem;
     text-align: center;
   }
 `;
@@ -348,7 +348,7 @@ export const TextTec2 = styled.p`
   color: ${props => props.theme.textColorAzul};
   margin-left: 50rem;
   margin-right: 48rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: 0.7rem;
 
   @media (max-width: 768px) {
@@ -364,14 +364,15 @@ export const TextH3 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   margin-left: 90rem;
   margin-right: 5rem;
-  margin-top: -18rem;
+  margin-top: -14.4rem;
 
   @media (max-width: 768px) {
-    margin-left: 0;
-    margin-right: -1rem;
-    font-size: 1.2rem;
-    margin-top: 22rem;
     text-align: center;
+    margin-left: 0;
+    margin-right: 0rem;
+    font-size: 1.2rem;
+    margin-top: 23rem;
+    
   }
 `;
 
@@ -514,8 +515,7 @@ export const Objetivo = styled.h1`
   @media (max-width: 768px) {
     margin-top: 8rem;
     font-size: 2.5rem;
-    margin-left: 3rem;
-    text-align: left;
+    text-align: center;
   }
 `;
 
@@ -558,7 +558,7 @@ export const TextoH2 = styled.h4`
   font-size: 1.5rem;
   margin-bottom: 10px;
   margin-left: 50rem;
-  margin-top: -14rem;
+  margin-top: -6.8rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -593,7 +593,7 @@ export const TextoH3 = styled.h4`
   font-size: 1.5rem;
   margin-bottom: 10px;
   margin-left: 90rem;
-  margin-top: -21rem;
+  margin-top: -8.5rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -621,4 +621,5 @@ export const TextOb3 = styled.p`
     margin-top: 1rem;  /* Aumenta o espaçamento superior para evitar colapsos */
     margin-bottom: 50px; /* Reduz o margin-bottom para melhor espaçamento em telas menores */
   }
+  
 `;

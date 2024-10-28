@@ -127,7 +127,7 @@ function Guia() {
           <AtivacaoContainer>
             <p>Ativação</p>
             <TextContainer1>
-              Conecte o Deep Sleep a uma fonte de energia e pressione o botão de ligar.
+              Conecte o Deep Sleep a uma fonte de energia e  através do aplicativo aperte o botão para ligar.
             </TextContainer1>
           </AtivacaoContainer>
 
@@ -139,9 +139,9 @@ function Guia() {
           </PersoContainer>
 
           <MonitoContainer>
-            <p>Monitoramento do Sono</p>
+            <p>Relaxamento</p>
             <TextContainer5>
-              Durante o sono, os sensores integrados monitoram os padrões de movimento e detectam os estágios do sono.
+              Durante o sono, os motores integrados causam vibrações relaxantes e melhoram a qualidade do sono.
             </TextContainer5>
           </MonitoContainer>
         </Column>
@@ -164,7 +164,7 @@ function Guia() {
           <IntegracaoContainer>
             <p>Integração com Dispositivos Inteligentes</p>
             <TextContainer6>
-              Através da conectividade Wi-Fi, o Deep Sleep pode se integrar a outros dispositivos inteligentes, permitindo uma experiência de sono ainda mais personalizada e automatizada.
+              Através da conectividade via Bluetooth, o Deep Sleep pode se integrar a outros dispositivos inteligentes, permitindo uma experiência de sono ainda mais personalizada e automatizada.
             </TextContainer6>
           </IntegracaoContainer>
         </Column>

@@ -166,6 +166,7 @@ export const ImporContainer = styled.h2`
   margin-bottom: 10px;
   margin-left: 10rem;
   margin-top: 5rem;
+  
 
 
   @media (max-width: 768px) {
@@ -197,7 +198,7 @@ export const UsoContainer = styled.h2`
   font-size: 1.5rem;
   margin-bottom: 10px;
   margin-left: 50rem;
-  margin-top: -14rem;
+  margin-top: -13.9rem;
 
   @media (max-width: 768px) {
     margin-left: 0;
