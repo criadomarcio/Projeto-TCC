@@ -36,7 +36,7 @@ export const HeaderContainer = styled.div`
   }
 
   .nav-item {
-    margin: 0 15px;
+    margin: 0 15px; 
   }
 
   .nav-link {
@@ -416,6 +416,55 @@ export const CarouselWrapper = styled.div`
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%;
+`;
+
+export const CarouselSlide = styled.div`
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+
+  img {
+    max-width: 100%;
+    max-height: 70%;
+    object-fit: cover;
+    
+    @media (max-width: 768px) {
+      max-height: 60%; /* Ajusta a imagem para telas menores */
+    }
+  }
+
+  .text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: ${props => props.theme.textColorAzul};
+    text-align: center;
+    margin-right: 48rem;
+    margin-left: 48rem;
+
+    @media (max-width: 768px) {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      font-size: 0.9rem; /* Reduz o tamanho do texto em dispositivos móveis */
+    }
+  }
+
+  .subtitle {
+    margin-top: 20px; /* Ajusta a distância entre a imagem e o subtítulo */
+    color: ${props => props.theme.textColorLaranja};
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem; /* Reduz o tamanho do subtítulo em telas menores */
+    }
+  }
 `;
 
 // Botões de navegação do carrossel

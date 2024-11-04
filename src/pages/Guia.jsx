@@ -6,7 +6,6 @@ import Ard from "../assets/arduino.jpg";
 import Diodo from "../assets/diodo.jpg";
 import Proto from "../assets/protoboard.jpg";
 import Motor from "../assets/Motor.jpg";
-import Hc05 from "../assets/hc05.jpg";
 import Rtc from "../assets/RTC.jpg";
 import Travesseiro from "../assets/travesseiro1.jpg";
 import menuOpenIcon from '../assets/list.svg';
@@ -35,7 +34,6 @@ import {
   PrevButton,
   NextButton,
   Video,
-  ImgHc05,
   ImgProto,
   ImgArduino,
   ImgDiodo,
@@ -53,7 +51,6 @@ function Guia() {
     { src: Diodo, alt: 'Permite controlar o fluxo de corrente em apenas uma direção, (R$1,80)', subtitle: 'Diodo' },
     { src: Proto, alt: 'Possibilita construir circuitos de teste sem que haja necessidade de solda, (R$ 12,50)', subtitle: 'Protoboard' },
     { src: Motor, alt: 'Detecta movimentação e vibração do travesseiro, (R$ 20,00)', subtitle: 'Sensor de Movimento' },
-    { src: Hc05, alt: 'O HC-05 é utilizado para criar conexões sem fio, possibilitando a automação e o controle de dispositivos à distância, (R$31,25)', subtitle: 'HC-05' },
     { src: Rtc, alt: 'Módulo Relógio de Tempo Real, que conta com um sensor de temperatura, (R$ 23,90)', subtitle: 'RTC com Sensor' },
     { src: Travesseiro, alt: 'Oferece conforto para uma experiência de sono superior, (R$ 60,00)', subtitle: 'Travesseiro' },
   ];
@@ -195,7 +192,7 @@ function Guia() {
       {/* Seção do vídeo */}
       <Video>
         <div style={{ textAlign: 'center', margin: '20px 0' }}>
-          <h2>Veja nosso vídeo explicativo</h2>
+          <h2 className='h2'>Veja nosso vídeo explicativo</h2>
           <iframe 
             width="560" 
             height="315" 
