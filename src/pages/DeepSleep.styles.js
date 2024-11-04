@@ -343,7 +343,7 @@ export const TextH2 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   flex-wrap: wrap;
   margin-left: 50rem;
-  margin-top: -16rem;
+  margin-top: -11rem;
 
   @media (max-width: 768px) {
     margin-left: 0;
@@ -377,7 +377,7 @@ export const TextH3 = styled.h5`
   flex-wrap: wrap;
   margin-left: 90rem;
   margin-right: 5rem;
-  margin-top: -14.4rem;
+  margin-top: -10rem;
 
   @media (max-width: 768px) {
     text-align: center;
@@ -511,7 +511,7 @@ export const TextPub2 = styled.p`
 export const TextPub3 = styled.p`
   color: ${props => props.theme.textColorAzul};
   flex-wrap: wrap;
-  margin-top: -5rem;
+  margin-top: -3.5rem;
   margin-left: 90rem;
   font-size: 1.3rem;
   margin-right: 8rem;
