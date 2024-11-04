@@ -186,6 +186,7 @@ export const TextContainer1 = styled.div`
     margin-right: 0;
     text-align: center;
     font-size: 1rem;
+    
   }
 `;
 

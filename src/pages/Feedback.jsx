@@ -131,7 +131,7 @@ const Feedback = () => {
 
           <div className="redes">
             <h5>Redes Sociais</h5>
-            <p className="numero">+55 11 98765-4321</p>
+            <p className="numero">+55 11 95606-0447</p>
             <img src={whats} className="zap" alt="zap" />
             <p className="instagram">@Deep_Sleep</p>
             <img src={insta} className="insta" alt="instagram" />

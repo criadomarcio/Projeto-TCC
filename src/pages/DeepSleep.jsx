@@ -93,19 +93,21 @@ function DeepSleep() {
         <img src={Tecno2} alt="tecnologia2" />
       </Imagem1>
 
-      <TextH1>Tecnologia de Ponta</TextH1>
+      <TextH1>Motores para Relaxamento</TextH1>
       <TextTec1>
-        Utilizando sensores de vibração avançados, o Deep Sleep é capaz de detectar e acompanhar os seus movimentos durante o sono. Essa tecnologia permite que o travesseiro ajuste automaticamente a firmeza, garantindo o máximo conforto e apoio para sua cabeça e pescoço.
+      Os motores de vibração transmitem uma experiência de bem-estar, simulando uma massagem suave. É ideal para pausa do estresse e relaxamento, ajudando o usuário a sorrir corpo e mente.
       </TextTec1>
 
-      <TextH2>Conforto Personalizado</TextH2>
+      <TextH2>Controle de Frequência de Vibração</TextH2>
       <TextTec2>
-        Cada pessoa tem necessidades únicas quando se trata de conforto no sono. O Deep Sleep ajusta automaticamente a firmeza com base no seu peso, posição de sono preferida e até mesmo no seu histórico de movimentação durante a noite.
+      Permite ajustar a intensidade da vibração de forma personalizada, indo de suave a intensa. Com isso, o usuário adapta o dispositivo para diferentes momentos, garantindo uma experiência sob medida.
       </TextTec2>
 
-      <TextH3>Monitoramento Inteligente</TextH3>
+      <TextH3>Despertador Programável</TextH3>
       <TextTec3>
-        Além de ajustar a firmeza, o Deep Sleep também monitora seus padrões de sono. Ele analisa dados como tempo total de sono, qualidade do sono, movimentação durante a noite e muito mais.
+      O despertador vibratório é uma alternativa suave ao alarme tradicional, permitindo que o usuário acorde ou faça pausas no dia de forma tranquila e discreta, incentivando uma rotina de autocuidado.
+
+
       </TextTec3>
 
       <Publico>Público-Alvo Específico</Publico>

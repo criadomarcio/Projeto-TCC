@@ -315,7 +315,7 @@ export const TextH1 = styled.h5`
   @media (max-width: 768px) {
     margin-left: 0.2rem;
     font-size: 1.2rem;
-    margin-top: -54rem;
+    margin-top: -57rem;
     text-align: center;
   }
 `;
@@ -330,8 +330,8 @@ export const TextTec1 = styled.p`
   font-size: 1.2rem;
 
   @media (max-width: 768px) {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 1rem;
     text-align: center;
     
@@ -346,9 +346,9 @@ export const TextH2 = styled.h5`
   margin-top: -16rem;
 
   @media (max-width: 768px) {
-    margin-left: 1rem;
+    margin-left: 0;
     font-size: 1.2rem;
-    margin-top: 12.5rem;
+    margin-top: 17rem;
     text-align: center;
   }
 `;
@@ -363,8 +363,8 @@ export const TextTec2 = styled.p`
   margin-top: 0.7rem;
 
   @media (max-width: 768px) {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 1rem;
     text-align: center;
   }
@@ -381,10 +381,10 @@ export const TextH3 = styled.h5`
 
   @media (max-width: 768px) {
     text-align: center;
-    margin-left: 4rem;
+    margin-left: 5.5rem;
     margin-right: 0rem;
     font-size: 1.2rem;
-    margin-top: 23rem;
+    margin-top: 25rem;
     
   }
 `;
@@ -399,8 +399,8 @@ export const TextTec3 = styled.p`
   margin-right: 5rem;
 
   @media (max-width: 768px) {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 1rem;
     text-align: center;
   }
@@ -482,7 +482,7 @@ export const TextPub1 = styled.p`
   font-size: 1.3rem;
 
   @media (max-width: 768px) {
-    margin-top: -45.5rem;
+    margin-top: -48.5rem;
     margin-left: 2rem;
     margin-right: 1rem;
     font-size: 1rem;
@@ -500,7 +500,7 @@ export const TextPub2 = styled.p`
   text-align: left;
 
   @media (max-width: 768px) {
-    margin-top: 22rem;
+    margin-top: 24rem;
     margin-left: 2rem;
     margin-right: 1rem;
     font-size: 1rem;
@@ -518,7 +518,7 @@ export const TextPub3 = styled.p`
   text-align: left;
   
   @media (max-width: 768px) {
-    margin-top: 19rem;
+    margin-top: 20rem;
     margin-left: 2rem;
     margin-right: 1rem;
     font-size: 1rem;
