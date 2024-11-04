@@ -1,3 +1,4 @@
+// Importações necessárias
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logoImg from '../assets/logo.png';
@@ -5,7 +6,7 @@ import Ard from "../assets/arduino.jpg";
 import Diodo from "../assets/diodo.jpg";
 import Proto from "../assets/protoboard.jpg";
 import Motor from "../assets/Motor.jpg";
-import Fonte from "../assets/Fonte.jpg";
+import Hc05 from "../assets/hc05.jpg";
 import Rtc from "../assets/RTC.jpg";
 import Travesseiro from "../assets/travesseiro1.jpg";
 import menuOpenIcon from '../assets/list.svg';
@@ -32,7 +33,14 @@ import {
   CarouselWrapper,
   CarouselSlide,
   PrevButton,
-  NextButton
+  NextButton,
+  Video,
+  ImgHc05,
+  ImgProto,
+  ImgArduino,
+  ImgDiodo,
+  ImgRtc,
+  ImgMotor
 } from './Guia.styles';
 
 function Guia() {
@@ -42,13 +50,12 @@ function Guia() {
 
   const images = [
     { src: Ard, alt: 'Controla os componentes eletrônicos do travesseiro, (R$ 99,90)', subtitle: 'Componentes Eletrônicos' },
-    { src: Diodo, alt: 'Permite controlar o fluxo de corrente em apenas uma direção, (R$ 30,00)', subtitle: 'Diodo' },
+    { src: Diodo, alt: 'Permite controlar o fluxo de corrente em apenas uma direção, (R$1,80)', subtitle: 'Diodo' },
     { src: Proto, alt: 'Possibilita construir circuitos de teste sem que haja necessidade de solda, (R$ 12,50)', subtitle: 'Protoboard' },
     { src: Motor, alt: 'Detecta movimentação e vibração do travesseiro, (R$ 20,00)', subtitle: 'Sensor de Movimento' },
-    { src: Fonte, alt: 'Fornece energia para controlar todos os componentes do travesseiro, (R$ 8,17)', subtitle: 'Fonte de Energia' },
+    { src: Hc05, alt: 'O HC-05 é utilizado para criar conexões sem fio, possibilitando a automação e o controle de dispositivos à distância, (R$31,25)', subtitle: 'HC-05' },
     { src: Rtc, alt: 'Módulo Relógio de Tempo Real, que conta com um sensor de temperatura, (R$ 23,90)', subtitle: 'RTC com Sensor' },
-    { src: Travesseiro, alt: 'Oferece conforto para uma experiência de sono superior, (R$ 217,00)', subtitle: 'Travesseiro' },
-    // Adicione mais imagens conforme necessário
+    { src: Travesseiro, alt: 'Oferece conforto para uma experiência de sono superior, (R$ 60,00)', subtitle: 'Travesseiro' },
   ];
 
   const handlePrev = () => {
@@ -81,9 +88,8 @@ function Guia() {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000); // 3000 ms = 3 segundos
+    }, 3000);
 
-    // Limpar o intervalo quando o componente for desmontado
     return () => clearInterval(interval);
   }, [currentIndex]);
 
@@ -127,7 +133,7 @@ function Guia() {
           <AtivacaoContainer>
             <p>Ativação</p>
             <TextContainer1>
-              Conecte o Deep Sleep a uma fonte de energia e  através do aplicativo aperte o botão para ligar.
+              Conecte o Deep Sleep a uma fonte de energia e através do aplicativo aperte o botão para ligar.
             </TextContainer1>
           </AtivacaoContainer>
 
@@ -174,18 +180,33 @@ function Guia() {
 
       <CarouselContainer>
         <CarouselWrapper style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-        {images.map((image, index) => (
-          <CarouselSlide key={index}>
-            <img src={image.src} alt={image.alt} />
-            <div className="subtitle">{image.subtitle}</div> {/* Subtítulo separado da imagem */}
-            <div className="text">{image.alt}</div> {/* Texto descritivo da imagem */}
-            
-          </CarouselSlide>
-        ))}
+          {images.map((image, index) => (
+            <CarouselSlide key={index}>
+              <img src={image.src} alt={image.alt} />
+              <div className="subtitle">{image.subtitle}</div>
+              <div className="text">{image.alt}</div>
+            </CarouselSlide>
+          ))}
         </CarouselWrapper>
         <PrevButton onClick={handlePrev} aria-label="Slide anterior">❮</PrevButton>
         <NextButton onClick={handleNext} aria-label="Próximo slide">❯</NextButton>
       </CarouselContainer>
+
+      {/* Seção do vídeo */}
+      <Video>
+        <div style={{ textAlign: 'center', margin: '20px 0' }}>
+          <h2>Veja nosso vídeo explicativo</h2>
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/8wB7hz3SD5A" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen 
+          ></iframe>
+        </div>
+      </Video>
 
     </>
   );

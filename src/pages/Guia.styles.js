@@ -323,6 +323,7 @@ export const FeedbackContainer = styled.div`
 `;
 
 
+// Estilização do componente Materiais
 export const Materiais = styled.div`
   margin-top: 9rem;
   font-size: 60px;
@@ -337,7 +338,7 @@ export const Materiais = styled.div`
   }
 `;
 
-
+// Estilos base para as imagens
 const baseImgStyles = `
   height: 250px;
   border-radius: 0.7rem;
@@ -351,13 +352,15 @@ const baseImgStyles = `
   }
 `;
 
+// Imagens específicas com margens ajustadas
 export const ImgProto = styled.img`${baseImgStyles} margin-left: 10rem; margin-top: 0.5rem;`;
 export const ImgArduino = styled.img`${baseImgStyles} margin-left: 38rem; margin-top: 0.5rem;`;
 export const ImgDiodo = styled.img`${baseImgStyles} margin-left: 65rem; margin-top: 0.5rem;`;
 export const ImgRtc = styled.img`${baseImgStyles} margin-left: 95rem; margin-top: 0.5rem;`;
-export const ImgFonte = styled.img`${baseImgStyles} margin-left: 36rem; margin-top: 0.5rem;`;
+export const ImgHc05 = styled.img`${baseImgStyles} margin-left: 36rem; margin-top: 0.5rem;`;
 export const ImgMotor = styled.img`${baseImgStyles} margin-left: 7rem; margin-top: 0.5rem;`;
 
+// Estilização do botão de imagem
 export const ImgBotao = styled.img`
   width: 250px; 
   margin-bottom: 10px;
@@ -368,6 +371,7 @@ export const ImgBotao = styled.img`
   }
 `;
 
+// Estilo para o cabeçalho
 export const TextH1 = styled.h2`
   color: ${props => props.theme.textColorLaranja};
   font-size: 1.5rem;
@@ -381,6 +385,7 @@ export const TextH1 = styled.h2`
   }
 `;
 
+// Estilo do card
 export const Card = styled.div`
   background-color: #FFFFFF;
   padding: 1rem;
@@ -394,117 +399,112 @@ export const Card = styled.div`
   }
 `;
 
+// Estilização do carrossel
 export const CarouselContainer = styled.div`
-top: 10rem;
-position: relative;
-overflow: hidden;
-width: 100%;
-height: 400px; /* Ajuste a altura conforme necessário */
+  top: 10rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px; /* Ajuste a altura conforme necessário */
 
-@media (max-width: 768px) {
-  height: 380px; /* Reduz a altura do carrossel em telas menores */
-}
+  @media (max-width: 768px) {
+    height: 380px; /* Reduz a altura do carrossel em telas menores */
+  }
 `;
 
 export const CarouselWrapper = styled.div`
-display: flex;
-transition: transform 0.5s ease-in-out;
-width: 100%;
-`;
-
-export const CarouselSlide = styled.div`
-  min-width: 100%;
-  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 100%;
-
-  img {
-    max-width: 100%;
-    max-height: 70%;
-    object-fit: cover;
-    
-    @media (max-width: 768px) {
-      max-height: 60%; /* Ajusta a imagem para telas menores */
-    }
-  }
-
-  .text {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: ${props => props.theme.textColorAzul};
-    text-align: center;
-    margin-right: 48rem;
-    margin-left: 48rem;
-
-    @media (max-width: 768px) {
-      margin-left: 2rem;
-      margin-right: 2rem;
-      font-size: 0.9rem; /* Reduz o tamanho do texto em dispositivos móveis */
-    }
-  }
-
-  .subtitle {
-    margin-top: 20px; /* Ajusta a distância entre a imagem e o subtítulo */
-    color: ${props => props.theme.textColorLaranja};
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    text-align: center;
-
-    @media (max-width: 768px) {
-      font-size: 1.2rem; /* Reduz o tamanho do subtítulo em telas menores */
-    }
-  }
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
 `;
 
+// Botões de navegação do carrossel
 export const NextButton = styled.button`
-position: absolute;
-top: 35%;
-right: 500px;
-transform: translateY(-50%);
-background-color: ${props => props.theme.pagesBackground};
-color: ${props => props.theme.textColorLaranja};
-border: none;
-padding: 10px;
-border-radius: 50%;
-cursor: pointer;
-z-index: 10;
-font-size: 1.5rem;
-
-&:hover {
+  position: absolute;
+  top: 35%;
+  right: 500px;
+  transform: translateY(-50%);
   background-color: ${props => props.theme.pagesBackground};
-}
+  color: ${props => props.theme.textColorLaranja};
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.5rem;
 
-@media (max-width: 768px) {
-  right: 20px; /* Ajusta o botão para o canto direito da tela */
-  font-size: 1.2rem;
-}
+  &:hover {
+    background-color: ${props => props.theme.pagesBackground};
+  }
+
+  @media (max-width: 768px) {
+    right: 20px; /* Ajusta o botão para o canto direito da tela */
+    font-size: 1.2rem;
+  }
 `;
 
 export const PrevButton = styled.button`
-position: absolute;
-top: 35%;
-left: 500px;
-transform: translateY(-50%);
-background-color: ${props => props.theme.pagesBackground};
-color: ${props => props.theme.textColorLaranja};
-border: none;
-padding: 10px;
-border-radius: 50%;
-cursor: pointer;
-z-index: 10;
-font-size: 1.5rem;
-
-&:hover {
+  position: absolute;
+  top: 35%;
+  left: 500px;
+  transform: translateY(-50%);
   background-color: ${props => props.theme.pagesBackground};
-}
+  color: ${props => props.theme.textColorLaranja};
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.5rem;
 
-@media (max-width: 768px) {
-  left: 20px; /* Ajusta o botão para o canto esquerdo da tela */
-  font-size: 1.2rem;
-}
+  &:hover {
+    background-color: ${props => props.theme.pagesBackground};
+  }
+
+  @media (max-width: 768px) {
+    left: 20px; /* Ajusta o botão para o canto esquerdo da tela */
+    font-size: 1.2rem;
+  }
+`;
+
+
+
+export const Video = styled.div`
+  margin-top: 20rem;
+  text-align: center; /* Centraliza o conteúdo */
+
+  .h2 {
+    color: ${props => props.theme.textColorLaranja};
+    font-size: 2rem; /* Tamanho da fonte padrão */
+    margin-bottom: 3rem;
+  }
+
+  /* Responsividade do iframe */
+  iframe {
+    width: 100%; /* A largura será 100% do elemento pai */
+    height: auto; /* A altura será ajustada automaticamente */
+    max-width: 560px; /* Define um limite máximo de largura */
+    aspect-ratio: 16 / 9; /* Mantém a proporção do vídeo */
+  }
+
+  /* Estilos específicos para dispositivos móveis */
+  @media (max-width: 768px) { /* Para telas menores que 768px */
+    margin-top: 10rem; /* Reduz a margem superior em telas pequenas */
+    
+    .h2 {
+      font-size: 1.25rem; /* Reduz o tamanho da fonte do título */
+      margin-top: 20rem;
+      margin-bottom: 4rem; /* Adiciona margem inferior para espaçamento */
+    }
+  }
+
+  @media (max-width: 480px) { /* Para telas menores que 480px */
+    .h2 {
+      font-size: 1rem; /* Tamanho da fonte ainda menor */
+    }
+
+    iframe {
+      max-width: 80%; /* Garante que o iframe não ultrapasse a largura do contêiner */
+    }
+  }
 `;
