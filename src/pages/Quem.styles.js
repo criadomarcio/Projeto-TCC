@@ -68,7 +68,7 @@ export const HeaderContainer = styled.div`
       padding: 1.5rem 2rem;
     }
 
-    .logo{
+    .logo {
       margin-left: -2rem;
       margin-top: 2.8rem;
     }
@@ -164,6 +164,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     gap: 30px;
+    padding: 10px;
   }
 `;
 
@@ -191,6 +192,10 @@ export const KaykeContainer = styled.h2`
   color: #F08080;
   font-size: 1.4rem;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const Fun1Container = styled.p`
@@ -198,6 +203,10 @@ export const Fun1Container = styled.p`
   font-size: 1rem;
   margin: 0;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const ImgRenan = styled.img`
@@ -216,6 +225,10 @@ export const RenanContainer = styled.h2`
   color: #F08080;
   font-size: 1.4rem;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const Fun2Container = styled.p`
@@ -223,6 +236,10 @@ export const Fun2Container = styled.p`
   font-size: 1rem;
   margin: 0;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const ImgRafael = styled.img`
@@ -241,6 +258,10 @@ export const RafaelContainer = styled.h2`
   color: #F08080;
   font-size: 1.4rem;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const Fun3Container = styled.p`
@@ -248,6 +269,10 @@ export const Fun3Container = styled.p`
   font-size: 1rem;
   margin: 0;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const InfoContainer = styled.div`
@@ -261,7 +286,13 @@ export const LinkContainer = styled.h5`
   margin-top: 3rem;
   text-align: center;
   font-size: 2rem;
-    ul {
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  ul {
     list-style: none;
     padding: 0;
     margin: 0;

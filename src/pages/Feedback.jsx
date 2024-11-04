@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'; // Para redirecionar
 import {
   EntContainer, SubtitleContainer, TxtContainer, Txt2Container, Sub2titleContainer, Txt3Container, 
   FormContainer, FormGroup, FormLabel, FormInput, FormTextArea, SubmitButton, 
-  Contato, PopupContainer // Adiciona PopupContainer para estilizar o popup
+  Contato, PopupContainer// Adiciona PopupContainer para estilizar o popup
 } from './Feedback.style'; // Ajuste o caminho se necessário
 
 import whats from "../assets/whatsapp-logo.svg";
@@ -71,6 +71,7 @@ const Feedback = () => {
   return (
     <>
       <FeedbackPage>
+        
         <div className="info-section">
           <EntContainer>Entre em contato conosco</EntContainer>
           <TxtContainer>Estamos ansiosos para ouvir de você. Entre em contato para mais informações sobre o travesseiro inteligente e como ele pode melhorar sua qualidade de sono.</TxtContainer>

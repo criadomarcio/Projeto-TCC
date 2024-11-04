@@ -163,6 +163,10 @@ export const AtivacaoContainer = styled.div`
   margin-top: 5rem;
   margin-left: 10rem;
   margin-bottom: 2rem;
+  
+  .p{
+    font-weight: bold; 
+  }
 
   @media (max-width: 768px) {
     margin-left: 2rem;
@@ -189,6 +193,8 @@ export const PersoContainer = styled.div`
   color: #F08080;
   text-align: right;
   margin-right: 10rem;
+  
+
 
   @media (max-width: 768px) {
     margin-right: 2rem;

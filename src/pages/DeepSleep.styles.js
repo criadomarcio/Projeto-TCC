@@ -141,6 +141,7 @@ export const HeaderContainer = styled.div`
 // Container Mais
 export const MaisContainer = styled.h1`
   color: ${props => props.theme.header};
+  flex-wrap: wrap;
   margin-top: 4rem;
   margin-left: 3rem;
   font-size: 5rem;
@@ -155,6 +156,7 @@ export const MaisContainer = styled.h1`
 // Container de Texto
 export const TextContainer = styled.p`
   color: ${props => props.theme.header};
+  flex-wrap: wrap;
   margin-top: 1.5rem;
   margin-left: 3rem;
   margin-right: 73.2rem;
@@ -171,6 +173,7 @@ export const TextContainer = styled.p`
 export const NumerosContainer = styled.div`  
   color: ${props => props.theme.textColorLaranja};
   display: flex;
+  flex-wrap: wrap;
   gap: 5rem;
   margin-left: 46rem;
   margin-top: -5rem;
@@ -222,6 +225,7 @@ export const ImagemContainer = styled.div`
   img {
     width: 90rem; /* Aumentado para um tamanho maior */
     height: 25.5rem; /* Manter a proporção da imagem */
+    flex-wrap: wrap;
     margin-left: 10rem;
     border-radius: 2rem;
     margin-top: 7rem;
@@ -240,6 +244,7 @@ export const ImagemContainer = styled.div`
 // Container Tecnologia
 export const Tecnologia = styled.h1`
   color: ${props => props.theme.header};
+  flex-wrap: wrap;
   text-align: center;
   margin-top: 15rem;
 
@@ -255,6 +260,7 @@ export const Tecnologia = styled.h1`
 // Subtítulo Tecnologia
 export const Subtitulo = styled.p`
   color: ${props => props.theme.textColorLaranja};
+  flex-wrap: wrap;
   margin-top: 2rem;
   margin-left: 39rem;
   margin-right: 39rem;
@@ -272,6 +278,7 @@ export const Subtitulo = styled.p`
 export const Imagem1 = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 5rem;
   margin-left: 10rem;
@@ -301,6 +308,7 @@ export const Imagem1 = styled.div`
 // Texto H1
 export const TextH1 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
+  flex-wrap: wrap;
   margin-left: 10rem;
   margin-top: 1rem;
 
@@ -315,6 +323,7 @@ export const TextH1 = styled.h5`
 // Texto Tecnologia 1
 export const TextTec1 = styled.p`
   color: ${props => props.theme.textColorAzul};
+  flex-wrap: wrap;
   margin-top: 1rem;
   margin-left: 10rem;
   margin-right: 89.3rem;
@@ -332,8 +341,9 @@ export const TextTec1 = styled.p`
 // Texto H2
 export const TextH2 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
+  flex-wrap: wrap;
   margin-left: 50rem;
-  margin-top: -16.2rem;
+  margin-top: -16rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -346,6 +356,7 @@ export const TextH2 = styled.h5`
 // Texto Tecnologia 2
 export const TextTec2 = styled.p`
   color: ${props => props.theme.textColorAzul};
+  flex-wrap: wrap;
   margin-left: 50rem;
   margin-right: 48rem;
   font-size: 1.2rem;
@@ -362,13 +373,15 @@ export const TextTec2 = styled.p`
 // Texto H3
 export const TextH3 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 90rem;
   margin-right: 5rem;
   margin-top: -14.4rem;
 
   @media (max-width: 768px) {
     text-align: center;
-    margin-left: 0;
+    margin-left: 4rem;
     margin-right: 0rem;
     font-size: 1.2rem;
     margin-top: 23rem;
@@ -379,6 +392,7 @@ export const TextH3 = styled.h5`
 // Texto Tecnologia 3
 export const TextTec3 = styled.p`
   color: ${props => props.theme.textColorAzul};
+  flex-wrap: wrap;
   margin-top: 0.7rem;
   margin-left: 90rem;
   font-size: 1.3rem;
@@ -395,6 +409,7 @@ export const TextTec3 = styled.p`
 // Container Público
 export const Publico = styled.h1`
   color: ${props => props.theme.header};
+  flex-wrap: wrap;
   text-align: center;
   margin-top: 15rem;
 
@@ -409,6 +424,7 @@ export const Publico = styled.h1`
 // Subtítulo Público
 export const Subtitulo1 = styled.p`
   color: ${props => props.theme.textColorLaranja};
+  flex-wrap: wrap;
   text-align: center;
   margin-top: 2rem;
   margin-left: 33rem;
@@ -425,6 +441,7 @@ export const Subtitulo1 = styled.p`
 // Container de Imagens Público
 export const ImagemP1 = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 5rem;
@@ -457,11 +474,12 @@ export const ImagemP1 = styled.div`
 // Texto Público 1
 export const TextPub1 = styled.p`
   color: ${props => props.theme.textColorAzul};
+  flex-wrap: wrap;
   margin-top: 1rem;
   margin-left: 10rem;
   margin-right: 90rem;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 
   @media (max-width: 768px) {
     margin-top: -45.5rem;
@@ -474,10 +492,11 @@ export const TextPub1 = styled.p`
 // Texto Público 2
 export const TextPub2 = styled.p`
   color: ${props => props.theme.textColorAzul};
+  flex-wrap: wrap;
   margin-left: 50rem;
   margin-right: 45rem;
-  font-size: 1.5rem;
-  margin-top: -6.5rem;
+  font-size: 1.3rem;
+  margin-top: -4rem;
   text-align: left;
 
   @media (max-width: 768px) {
@@ -491,9 +510,10 @@ export const TextPub2 = styled.p`
 // Texto Público 3
 export const TextPub3 = styled.p`
   color: ${props => props.theme.textColorAzul};
+  flex-wrap: wrap;
   margin-top: -5rem;
   margin-left: 90rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-right: 8rem;
   text-align: left;
   
@@ -508,6 +528,7 @@ export const TextPub3 = styled.p`
 // Container Objetivo
 export const Objetivo = styled.h1`
   color: ${props => props.theme.header}; 
+  flex-wrap: wrap;
   text-align: center;
   margin-top: 15rem;
   width: 100%;
@@ -522,6 +543,7 @@ export const Objetivo = styled.h1`
 // Texto H1 Objetivo
 export const TextoH1 = styled.h4`
   color: ${props => props.theme.textColorLaranja};
+  flex-wrap: wrap;
   font-size: 1.5rem;
   margin-bottom: 10px;
   margin-left: 10rem;
@@ -538,6 +560,7 @@ export const TextoH1 = styled.h4`
 // Texto Objetivo 1
 export const TextOb1 = styled.p`
   color: ${props => props.theme.textColorAzul};
+  flex-wrap: wrap;
   font-size: 1.5rem;
   margin-bottom: 10px;
   max-width: 500px;
@@ -555,6 +578,7 @@ export const TextOb1 = styled.p`
 // Texto H2 Objetivo
 export const TextoH2 = styled.h4`
   color: ${props => props.theme.textColorLaranja};
+  flex-wrap: wrap;
   font-size: 1.5rem;
   margin-bottom: 10px;
   margin-left: 50rem;
@@ -571,6 +595,7 @@ export const TextoH2 = styled.h4`
 // Texto Objetivo 2
 export const TextOb2 = styled.p`
   color: ${props => props.theme.textColorAzul};
+  flex-wrap: wrap;
   font-size: 1.5rem;
   margin-bottom: 10px;
   margin-left: 50rem;
@@ -590,10 +615,11 @@ export const TextOb2 = styled.p`
 // Texto H3 Objetivo
 export const TextoH3 = styled.h4`
   color: ${props => props.theme.textColorLaranja};
+  flex-wrap: wrap;
   font-size: 1.5rem;
   margin-bottom: 10px;
   margin-left: 90rem;
-  margin-top: -8.5rem;
+  margin-top: -8rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -606,6 +632,7 @@ export const TextoH3 = styled.h4`
 // Texto Objetivo 3
 export const TextOb3 = styled.p`
   color: ${props => props.theme.textColorAzul};
+  flex-wrap: wrap;
   font-size: 1.5rem;
   margin-bottom: 200px;
   max-width: 500px;
