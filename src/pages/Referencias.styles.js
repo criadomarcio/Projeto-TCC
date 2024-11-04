@@ -164,7 +164,7 @@ export const ImporContainer = styled.h2`
   color: #F08080;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 10rem;
+  margin-left: 3.5rem;
   margin-top: 5rem;
   
 
@@ -181,7 +181,7 @@ export const Text1Container = styled.p`
   font-size: 1.5rem;
   margin-bottom: 10px;
   max-width: 500px;
-  margin-left: 10rem;
+  margin-left: 3.5rem;
   line-height: 1.2;
   margin-top: 0.5rem;
 
@@ -197,7 +197,7 @@ export const UsoContainer = styled.h2`
   color: #F08080;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 50rem;
+  margin-left: 45rem;
   margin-top: -13.9rem;
 
   @media (max-width: 768px) {
@@ -212,11 +212,11 @@ export const Text2Container = styled.p`
   font-size: 1.5rem;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 50rem;
+  margin-left: 45rem;
   max-width: 500px;
   line-height: 1.2;
-  margin-top: 3-rem;
-  margin-right: 45rem;
+  margin-top: 0.5rem;
+  margin-right: 37rem;
 
   @media (max-width: 768px) {
     margin-left: 0;
@@ -230,8 +230,8 @@ export const FreqContainer = styled.h2`
   color: #F08080;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 90rem;
-  margin-top: -28rem;
+  margin-left: 84rem;
+  margin-top: -23rem;
 
   @media (max-width: 768px) {
     margin-left: 0;
@@ -246,9 +246,9 @@ export const Text3Container = styled.p`
   margin-bottom: 200px;
   max-width: 500px;
   line-height: 1.2;
-  margin-left: 90rem;
+  margin-left: 84rem;
   margin-top: 0.5rem;
-  margin-right: 5rem;
+  margin-right: 2rem;
 
   @media (max-width: 768px) {
     margin-left: 0;

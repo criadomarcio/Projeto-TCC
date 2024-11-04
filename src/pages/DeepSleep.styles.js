@@ -281,7 +281,7 @@ export const Imagem1 = styled.div`
   flex-wrap: wrap;
   align-items: center;
   margin-top: 5rem;
-  margin-left: 10rem;
+  margin-left: 6.5rem;
   width: fit-content;
   height: auto;
   gap: 20rem;
@@ -309,7 +309,7 @@ export const Imagem1 = styled.div`
 export const TextH1 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   flex-wrap: wrap;
-  margin-left: 10rem;
+  margin-left: 6.5rem;
   margin-top: 1rem;
 
   @media (max-width: 768px) {
@@ -325,8 +325,8 @@ export const TextTec1 = styled.p`
   color: ${props => props.theme.textColorAzul};
   flex-wrap: wrap;
   margin-top: 1rem;
-  margin-left: 10rem;
-  margin-right: 89.3rem;
+  margin-left: 6.5rem;
+  margin-right: 85.3rem;
   font-size: 1.2rem;
 
   @media (max-width: 768px) {
@@ -342,7 +342,7 @@ export const TextTec1 = styled.p`
 export const TextH2 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   flex-wrap: wrap;
-  margin-left: 50rem;
+  margin-left: 46.7rem;
   margin-top: -11rem;
 
   @media (max-width: 768px) {
@@ -357,8 +357,8 @@ export const TextH2 = styled.h5`
 export const TextTec2 = styled.p`
   color: ${props => props.theme.textColorAzul};
   flex-wrap: wrap;
-  margin-left: 50rem;
-  margin-right: 48rem;
+  margin-left: 46.7rem;
+  margin-right: 43rem;
   font-size: 1.2rem;
   margin-top: 0.7rem;
 
@@ -375,9 +375,9 @@ export const TextH3 = styled.h5`
   color: ${props => props.theme.textColorLaranja};
   display: flex;
   flex-wrap: wrap;
-  margin-left: 90rem;
+  margin-left: 86.7rem;
   margin-right: 5rem;
-  margin-top: -10rem;
+  margin-top: -9.38rem;
 
   @media (max-width: 768px) {
     text-align: center;
@@ -394,7 +394,7 @@ export const TextTec3 = styled.p`
   color: ${props => props.theme.textColorAzul};
   flex-wrap: wrap;
   margin-top: 0.7rem;
-  margin-left: 90rem;
+  margin-left: 86.7rem;
   font-size: 1.3rem;
   margin-right: 5rem;
 
@@ -445,7 +445,7 @@ export const ImagemP1 = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 5rem;
-  margin-left: 10rem;
+  margin-left: 7.5rem;
   width: fit-content;
   height: auto;
   gap: 20rem;
@@ -476,8 +476,8 @@ export const TextPub1 = styled.p`
   color: ${props => props.theme.textColorAzul};
   flex-wrap: wrap;
   margin-top: 1rem;
-  margin-left: 10rem;
-  margin-right: 90rem;
+  margin-left: 7.8rem;
+  margin-right: 85rem;
   line-height: 1.5;
   font-size: 1.3rem;
 
@@ -493,8 +493,8 @@ export const TextPub1 = styled.p`
 export const TextPub2 = styled.p`
   color: ${props => props.theme.textColorAzul};
   flex-wrap: wrap;
-  margin-left: 50rem;
-  margin-right: 45rem;
+  margin-left: 47.5rem;
+  margin-right: 40rem;
   font-size: 1.3rem;
   margin-top: -4rem;
   text-align: left;
@@ -512,9 +512,9 @@ export const TextPub3 = styled.p`
   color: ${props => props.theme.textColorAzul};
   flex-wrap: wrap;
   margin-top: -3.5rem;
-  margin-left: 90rem;
+  margin-left: 87.5rem;
   font-size: 1.3rem;
-  margin-right: 8rem;
+  margin-right: 4rem;
   text-align: left;
   
   @media (max-width: 768px) {
@@ -619,7 +619,7 @@ export const TextoH3 = styled.h4`
   font-size: 1.5rem;
   margin-bottom: 10px;
   margin-left: 90rem;
-  margin-top: -8rem;
+  margin-top: -12rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
