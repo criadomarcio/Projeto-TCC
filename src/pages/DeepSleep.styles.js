@@ -546,7 +546,7 @@ export const TextoH1 = styled.h4`
   flex-wrap: wrap;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 10rem;
+  margin-left: 8rem;
   margin-top: 5rem;
 
   @media (max-width: 768px) {
@@ -564,7 +564,7 @@ export const TextOb1 = styled.p`
   font-size: 1.5rem;
   margin-bottom: 10px;
   max-width: 500px;
-  margin-left: 10rem;
+  margin-left: 8rem;
   line-height: 1.2;
   margin-top: 0.5rem;
 
@@ -581,7 +581,7 @@ export const TextoH2 = styled.h4`
   flex-wrap: wrap;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 50rem;
+  margin-left: 49rem;
   margin-top: -6.8rem;
 
   @media (max-width: 768px) {
@@ -598,11 +598,11 @@ export const TextOb2 = styled.p`
   flex-wrap: wrap;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 50rem;
+  margin-left: 49rem;
   max-width: 500px;
   line-height: 1.2;
   margin-top: 0.5rem;
-  margin-right: 45rem;
+  margin-right: 40rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -618,8 +618,8 @@ export const TextoH3 = styled.h4`
   flex-wrap: wrap;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  margin-left: 90rem;
-  margin-top: -12rem;
+  margin-left: 87rem;
+  margin-top: -8rem;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -637,7 +637,7 @@ export const TextOb3 = styled.p`
   margin-bottom: 200px;
   max-width: 500px;
   line-height: 1.2;
-  margin-left: 90rem;
+  margin-left: 87rem;
   margin-top: 0.5rem;
   margin-right: 5rem;
 
