@@ -523,7 +523,7 @@ export const Video = styled.div`
   text-align: center; /* Centraliza o conteúdo */
 
   .h2 {
-    color: ${props => props.theme.textColorLaranja};
+    color: #5D3FD3;
     font-size: 2rem; /* Tamanho da fonte padrão */
     margin-bottom: 3rem;
   }
@@ -541,7 +541,7 @@ export const Video = styled.div`
     margin-top: 10rem; /* Reduz a margem superior em telas pequenas */
     
     .h2 {
-      font-size: 1.25rem; /* Reduz o tamanho da fonte do título */
+      font-size: 4rem; /* Reduz o tamanho da fonte do título */
       margin-top: 20rem;
       margin-bottom: 4rem; /* Adiciona margem inferior para espaçamento */
     }
@@ -549,7 +549,7 @@ export const Video = styled.div`
 
   @media (max-width: 480px) { /* Para telas menores que 480px */
     .h2 {
-      font-size: 1rem; /* Tamanho da fonte ainda menor */
+      font-size: 1.5rem; /* Tamanho da fonte ainda menor */
     }
 
     iframe {
